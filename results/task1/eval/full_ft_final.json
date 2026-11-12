@@ -1,0 +1,79 @@
+{
+  "condition": "full_ft_final",
+  "model_info": {
+    "condition": "full_ft_final",
+    "variant": "full_ft",
+    "update": 1250,
+    "weights": "model_state.pt"
+  },
+  "scores": {
+    "gsm8k": {
+      "exact_match_flexible": 0.6459438968915845,
+      "exact_match_strict": 0.0,
+      "truncated_fraction": 0.0075815011372251705,
+      "unextractable_fraction_flexible": 0.0,
+      "n": 1319
+    },
+    "hellaswag": {
+      "acc": 0.37353116908982276,
+      "acc_norm": 0.4592710615415256,
+      "n": 10042
+    },
+    "boolq": {
+      "acc": 0.5868501529051988,
+      "acc_norm": null,
+      "n": 3270
+    },
+    "arc_easy": {
+      "acc": 0.6586700336700336,
+      "acc_norm": 0.627104377104377,
+      "n": 2376
+    }
+  },
+  "lm_eval_results": {
+    "gsm8k_cot": {
+      "name": "gsm8k_cot",
+      "alias": "gsm8k_cot",
+      "sample_len": 1319,
+      "exact_match,strict-match": 0.0,
+      "exact_match_stderr,strict-match": 0.0,
+      "exact_match,flexible-extract": 0.6459438968915845,
+      "exact_match_stderr,flexible-extract": 0.013172728385222552
+    },
+    "hellaswag": {
+      "name": "hellaswag",
+      "alias": "hellaswag",
+      "sample_len": 10042,
+      "acc,none": 0.37353116908982276,
+      "acc_stderr,none": 0.0048275265848897455,
+      "acc_norm,none": 0.4592710615415256,
+      "acc_norm_stderr,none": 0.004973199296339933
+    },
+    "boolq": {
+      "name": "boolq",
+      "alias": "boolq",
+      "sample_len": 3270,
+      "acc,none": 0.5868501529051988,
+      "acc_stderr,none": 0.008612117547803605
+    },
+    "arc_easy": {
+      "name": "arc_easy",
+      "alias": "arc_easy",
+      "sample_len": 2376,
+      "acc,none": 0.6586700336700336,
+      "acc_stderr,none": 0.009729473841242994,
+      "acc_norm,none": 0.627104377104377,
+      "acc_norm_stderr,none": 0.009922743197129102
+    }
+  },
+  "settings": {
+    "num_fewshot": 0,
+    "dtype": "float16",
+    "gsm8k_max_new_tokens": 1024,
+    "gsm8k_chat_template": true,
+    "enable_thinking": false
+  },
+  "elapsed_sec": 998.3949398994446,
+  "peak_memory_mb": 7033.80712890625,
+  "lm_eval_version": "0.4.13"
+}

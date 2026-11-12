@@ -1,0 +1,9 @@
+{
+  "requested": 9244,
+  "newly_cached": 9244,
+  "already_cached": 0,
+  "seconds": 15.906052408274263,
+  "images_per_sec": 581.1624256431664,
+  "peak_gpu_mem_mb": 425.16455078125,
+  "cache_disk_mb": 2655.16748046875
+}

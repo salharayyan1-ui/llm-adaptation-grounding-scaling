@@ -1,0 +1,376 @@
+{
+  "grounding_suite": {
+    "A_follows_partner": [
+      {
+        "pair_id": "test_counting_0",
+        "question": "How many motorcycles can you see?",
+        "references": [
+          "3",
+          "1"
+        ],
+        "images": [
+          "val2014_000000477688",
+          "val2014_000000550529"
+        ],
+        "predictions": {
+          "correct": [
+            "3",
+            "1"
+          ],
+          "swap": [
+            "1",
+            "3"
+          ],
+          "mismatched": [
+            "1",
+            "0"
+          ],
+          "no_image": [
+            "It depends on the location and time of observation. In some places, you might",
+            "It depends on the location and time of observation. In some places, you might"
+          ]
+        }
+      },
+      {
+        "pair_id": "test_counting_16",
+        "question": "How many teddy bears can you see?",
+        "references": [
+          "2",
+          "4"
+        ],
+        "images": [
+          "val2014_000000276921",
+          "val2014_000000459449"
+        ],
+        "predictions": {
+          "correct": [
+            "2",
+            "4"
+          ],
+          "swap": [
+            "4",
+            "2"
+          ],
+          "mismatched": [
+            "1",
+            "1"
+          ],
+          "no_image": [
+            "There are no teddy bears in the real world.",
+            "There are no teddy bears in the real world."
+          ]
+        }
+      },
+      {
+        "pair_id": "test_counting_3",
+        "question": "How many dogs can you see?",
+        "references": [
+          "1",
+          "3"
+        ],
+        "images": [
+          "val2014_000000016164",
+          "val2014_000000275542"
+        ],
+        "predictions": {
+          "correct": [
+            "1",
+            "3"
+          ],
+          "swap": [
+            "3",
+            "1"
+          ],
+          "mismatched": [
+            "1",
+            "1"
+          ],
+          "no_image": [
+            "I cannot see dogs, but I can see other things.",
+            "I cannot see dogs, but I can see other things."
+          ]
+        }
+      }
+    ],
+    "B_unchanged_under_swap": [],
+    "C_wrong_with_correct_image": [
+      {
+        "pair_id": "test_counting_1",
+        "question": "How many clocks can you see?",
+        "references": [
+          "1",
+          "4"
+        ],
+        "images": [
+          "val2014_000000450786",
+          "val2014_000000347982"
+        ],
+        "predictions": {
+          "correct": [
+            "1",
+            "2"
+          ],
+          "swap": [
+            "2",
+            "1"
+          ],
+          "mismatched": [
+            "1",
+            "3"
+          ],
+          "no_image": [
+            "The question is a play on words. The word **\"clock\"** can",
+            "The question is a play on words. The word **\"clock\"** can"
+          ]
+        }
+      },
+      {
+        "pair_id": "test_counting_10",
+        "question": "How many baseball bats can you see?",
+        "references": [
+          "2",
+          "1"
+        ],
+        "images": [
+          "val2014_000000306940",
+          "val2014_000000516415"
+        ],
+        "predictions": {
+          "correct": [
+            "3",
+            "1"
+          ],
+          "swap": [
+            "1",
+            "3"
+          ],
+          "mismatched": [
+            "1",
+            "0"
+          ],
+          "no_image": [
+            "There are no baseball bats visible in the real world. They are typically hidden under",
+            "There are no baseball bats visible in the real world. They are typically hidden under"
+          ]
+        }
+      },
+      {
+        "pair_id": "test_counting_11",
+        "question": "How many cups can you see?",
+        "references": [
+          "3",
+          "4"
+        ],
+        "images": [
+          "val2014_000000045775",
+          "val2014_000000273494"
+        ],
+        "predictions": {
+          "correct": [
+            "2",
+            "4"
+          ],
+          "swap": [
+            "4",
+            "2"
+          ],
+          "mismatched": [
+            "3",
+            "2"
+          ],
+          "no_image": [
+            "It depends on the context. In some contexts, especially in visual arts or photography",
+            "It depends on the context. In some contexts, especially in visual arts or photography"
+          ]
+        }
+      }
+    ]
+  },
+  "vqav2_suite": {
+    "A_follows_partner": [
+      {
+        "pair_id": "val_112573002_307209000",
+        "question": "Are the animals in their natural habitat?",
+        "references": [
+          "no",
+          "yes"
+        ],
+        "images": [
+          "val2014_000000112573",
+          "val2014_000000307209"
+        ],
+        "predictions": {
+          "correct": [
+            "no",
+            "yes"
+          ],
+          "swap": [
+            "yes",
+            "no"
+          ],
+          "mismatched": [
+            "no",
+            "no"
+          ],
+          "no_image": [
+            "No, the animals in their natural habitat are not the animals in the question.",
+            "No, the animals in their natural habitat are not the animals in the question."
+          ]
+        }
+      },
+      {
+        "pair_id": "val_119964003_300701000",
+        "question": "Is there water in this picture?",
+        "references": [
+          "no",
+          "yes"
+        ],
+        "images": [
+          "val2014_000000119964",
+          "val2014_000000300701"
+        ],
+        "predictions": {
+          "correct": [
+            "no",
+            "yes"
+          ],
+          "swap": [
+            "yes",
+            "no"
+          ],
+          "mismatched": [
+            "yes",
+            "yes"
+          ],
+          "no_image": [
+            "Yes, there is water in this picture.",
+            "Yes, there is water in this picture."
+          ]
+        }
+      },
+      {
+        "pair_id": "val_140713003_534151001",
+        "question": "How many elephants?",
+        "references": [
+          "2",
+          "1"
+        ],
+        "images": [
+          "val2014_000000140713",
+          "val2014_000000534151"
+        ],
+        "predictions": {
+          "correct": [
+            "2",
+            "1"
+          ],
+          "swap": [
+            "1",
+            "2"
+          ],
+          "mismatched": [
+            "0",
+            "0"
+          ],
+          "no_image": [
+            "There are no elephants in the real world.",
+            "There are no elephants in the real world."
+          ]
+        }
+      }
+    ],
+    "B_unchanged_under_swap": [],
+    "C_wrong_with_correct_image": [
+      {
+        "pair_id": "val_100087003_408894002",
+        "question": "What street are you looking at?",
+        "references": [
+          "lutz",
+          "dino's way"
+        ],
+        "images": [
+          "val2014_000000100087",
+          "val2014_000000408894"
+        ],
+        "predictions": {
+          "correct": [
+            "street",
+            "street"
+          ],
+          "swap": [
+            "street",
+            "street"
+          ],
+          "mismatched": [
+            "street",
+            "northampton"
+          ],
+          "no_image": [
+            "I am not a person, so I cannot look at a street. However,",
+            "I am not a person, so I cannot look at a street. However,"
+          ]
+        }
+      },
+      {
+        "pair_id": "val_110672001_276552012",
+        "question": "What type of food is on the plate?",
+        "references": [
+          "steak",
+          "pizza"
+        ],
+        "images": [
+          "val2014_000000110672",
+          "val2014_000000276552"
+        ],
+        "predictions": {
+          "correct": [
+            "pizza",
+            "pizza"
+          ],
+          "swap": [
+            "pizza",
+            "pizza"
+          ],
+          "mismatched": [
+            "soup",
+            "rice"
+          ],
+          "no_image": [
+            "The question is ambiguous and unclear. However, if you're referring to a specific",
+            "The question is ambiguous and unclear. However, if you're referring to a specific"
+          ]
+        }
+      },
+      {
+        "pair_id": "val_1205001_550784000",
+        "question": "How many pillows are seen?",
+        "references": [
+          "3",
+          "4"
+        ],
+        "images": [
+          "val2014_000000001205",
+          "val2014_000000550784"
+        ],
+        "predictions": {
+          "correct": [
+            "1",
+            "2"
+          ],
+          "swap": [
+            "2",
+            "1"
+          ],
+          "mismatched": [
+            "1",
+            "0"
+          ],
+          "no_image": [
+            "The question \"How many pillows are seen?\" is ambiguous and unclear. It could",
+            "The question \"How many pillows are seen?\" is ambiguous and unclear. It could"
+          ]
+        }
+      }
+    ]
+  }
+}

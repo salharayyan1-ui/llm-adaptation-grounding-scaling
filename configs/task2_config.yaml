@@ -1,0 +1,78 @@
+# Task 2 Configuration: Vision-Language Models & Visual Grounding
+models:
+  vision_encoder: "google/siglip-base-patch16-224"
+  language_model: "Qwen/Qwen3-0.6B"
+  enable_thinking: false
+  seed: 6304
+  fp16: true
+  gradient_checkpointing: true
+
+connector:
+  in_features: 768
+  hidden_features: 1024
+  out_features: 1024
+  activation: "GELU"
+
+training:
+  effective_batch_size: 16
+  micro_batch_size: 8
+  gradient_accumulation_steps: 2
+  weight_decay: 0.01
+  grad_clip_norm: 1.0
+  warmup_ratio: 0.05
+  min_lr_ratio: 0.10  # cosine decay to 10% of peak LR
+
+token_caps:
+  question_max_tokens: 80
+  caption_target_max_tokens: 64
+  short_answer_max_tokens: 16
+
+stages:
+  stage1:
+    name: "caption_alignment"
+    updates: 2250
+    connector_peak_lr: 1.0e-3
+    lora_peak_lr: null
+    mix_probabilities:
+      captions: 1.0
+
+  stage2:
+    name: "visual_instruction_tuning"
+    updates: 1500
+    connector_peak_lr: 1.0e-4
+    lora_peak_lr: 2.0e-5
+    lora_rank: 16
+    lora_alpha: 32
+    lora_dropout: 0.05
+    lora_targets: ["q_proj", "k_proj", "v_proj", "o_proj"]
+    mix_probabilities:
+      presence: 0.50
+      counting: 0.25
+      caption_replay: 0.25
+
+  stage3:
+    name: "natural_vqa_specialization"
+    updates: 750
+    connector_peak_lr: 5.0e-5
+    lora_peak_lr: 1.0e-5
+    lora_rank: 16
+    lora_alpha: 32
+    lora_dropout: 0.05
+    lora_targets: ["q_proj", "k_proj", "v_proj", "o_proj"]
+    mix_probabilities:
+      natural_vqa: 0.70
+      presence_replay: 0.10
+      counting_replay: 0.10
+      caption_replay: 0.10
+
+evaluation:
+  checkpoint_interval: 250
+  dev_eval_interval: 500
+  stage_endpoints: [2250, 3750, 4500]
+  bootstrap_resamples: 4000
+  conditions:
+    - "correct"
+    - "complementary_swap"
+    - "mismatched"
+    - "no_image"
+  output_dir: "./outputs/task2"

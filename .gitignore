@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C checkpoints, weights and large assets
+checkpoints/
+outputs/
+data/
+*.parquet
+*.pt
+*.bin
+*.safetensors
+*.tar.gz
+*.zip
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Temporary run artifacts
+tmp/
+tmp_results_*/
+*.log
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+

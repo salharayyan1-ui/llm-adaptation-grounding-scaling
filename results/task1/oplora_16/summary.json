@@ -1,0 +1,68 @@
+{
+  "method": "oplora_16",
+  "total_updates": 1250,
+  "examples_seen": 40000,
+  "total_time_sec": 9756.558616161346,
+  "train_time_excl_checkpoints_sec": 9755.376800862607,
+  "checkpoint_time_sec": 1.1818152987398207,
+  "setup_time_sec": 15.358871824108064,
+  "peak_memory_mb": 5236.369140625,
+  "skipped_updates": 0,
+  "skipped_update_indices": [],
+  "trainable_parameters": 10092544,
+  "total_parameters": 606142464,
+  "checkpoints": [
+    {
+      "update": 312,
+      "examples_seen": 9984,
+      "weights_file": "adapter_state.pt",
+      "weights_mb": 38.62060832977295,
+      "projected_export_sec": 0.11218235082924366,
+      "projected_factors_mb": 38.627163887023926,
+      "optimizer_mb": 77.3648042678833,
+      "total_mb": 154.61257648468018,
+      "save_sec": 0.3067504093050957
+    },
+    {
+      "update": 625,
+      "examples_seen": 20000,
+      "weights_file": "adapter_state.pt",
+      "weights_mb": 38.62060832977295,
+      "projected_export_sec": 0.0868227006867528,
+      "projected_factors_mb": 38.627163887023926,
+      "optimizer_mb": 77.39465045928955,
+      "total_mb": 154.64242267608643,
+      "save_sec": 0.28142341831699014
+    },
+    {
+      "update": 937,
+      "examples_seen": 29984,
+      "weights_file": "adapter_state.pt",
+      "weights_mb": 38.62060832977295,
+      "projected_export_sec": 0.08880711905658245,
+      "projected_factors_mb": 38.627163887023926,
+      "optimizer_mb": 77.42443561553955,
+      "total_mb": 154.67220783233643,
+      "save_sec": 0.30552563397213817
+    },
+    {
+      "update": 1250,
+      "examples_seen": 40000,
+      "weights_file": "adapter_state.pt",
+      "weights_mb": 38.62060832977295,
+      "projected_export_sec": 0.08804041473194957,
+      "projected_factors_mb": 38.627163887023926,
+      "optimizer_mb": 77.4542818069458,
+      "total_mb": 154.70205402374268,
+      "save_sec": 0.28811583714559674
+    }
+  ],
+  "oplora": {
+    "num_adapters": 196,
+    "total_svd_time_sec": 14.931933029554784,
+    "total_basis_storage_mb": 308.0
+  },
+  "l2sp": null,
+  "resumed_from": null,
+  "data_fingerprint": "b98e19fce2e4e0705d5209fbee1ab6474c078a982d67ea642effbe7a013a383c"
+}

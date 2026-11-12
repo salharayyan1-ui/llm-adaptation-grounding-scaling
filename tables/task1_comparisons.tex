@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrrrrr}
+\toprule
+Comparison (pp, paired 95\% CI) & GSM8K & GSM8K (digit-required) & HellaSwag & BoolQ & ARC-Easy \\
+\midrule
+Rank: LoRA-16 − LoRA-4 & +1.59 [-0.38, +3.71] & +1.59 [-0.45, +3.64] & +0.02 [-0.32, +0.35] & +5.02 [+3.85, +6.24] * & +0.84 [-0.17, +1.81] \\
+Explicit regularisation: Full FT + L2-SP − Full FT & -0.53 [-2.43, +1.44] & -0.53 [-2.27, +1.29] & +0.50 [+0.14, +0.86] * & +5.84 [+4.77, +6.94] * & +0.38 [-0.55, +1.26] \\
+Orthogonal protection: OPLoRA-16 − LoRA-16 & -0.08 [-1.67, +1.59] & -0.08 [-1.67, +1.52] & -0.06 [-0.30, +0.18] & -0.83 [-1.47, -0.15] * & -0.17 [-0.72, +0.42] \\
+Method: Full FT − LoRA-16 & +2.81 [+0.45, +5.00] * & +2.81 [+0.53, +5.01] * & -1.47 [-1.95, -0.98] * & -13.67 [-15.63, -11.83] * & -1.30 [-2.40, -0.17] * \\
+Progress: Full FT final − midpoint & +7.96 [+5.46, +10.46] * & +7.96 [+5.61, +10.39] * & +0.49 [+0.16, +0.82] * & -1.96 [-2.69, -1.25] * & +0.80 [+0.08, +1.56] * \\
+\bottomrule
+\end{tabular}
+\caption{Controlled comparisons at the final checkpoints: difference in percentage points with a paired bootstrap 95\% interval (* = interval excludes 0).}
+\label{tab:task1_comparisons}
+\end{table}

@@ -1,0 +1,36 @@
+| Dataset | N | Paired comparison | Δ accuracy, pp [95% CI] |
+|---|---|---|---|
+| math | 8 | self_consistency - first_ans | +7.7 [+6.6, +8.8] |
+| math | 8 | highest_logp - first_ans | +3.2 [+2.0, +4.3] |
+| math | 8 | highest_self_certainty - first_ans | +6.2 [+5.0, +7.5] |
+| math | 8 | highest_self_certainty - highest_logp | +3.1 [+1.9, +4.4] |
+| math | 8 | self_certainty_rwc - self_consistency | +1.1 [+0.5, +1.7] |
+| math | 8 | self_certainty_rwc - highest_self_certainty | +2.5 [+1.6, +3.4] |
+| math | 32 | self_consistency - first_ans | +9.9 [+8.3, +11.6] |
+| math | 32 | highest_logp - first_ans | +0.1 [-2.0, +2.1] |
+| math | 32 | highest_self_certainty - first_ans | +6.8 [+4.9, +8.9] |
+| math | 32 | highest_self_certainty - highest_logp | +6.6 [+4.2, +9.1] |
+| math | 32 | self_certainty_rwc - self_consistency | +1.8 [+0.7, +2.9] |
+| math | 32 | self_certainty_rwc - highest_self_certainty | +4.9 [+2.8, +7.2] |
+| mathvista | 8 | self_consistency - first_ans | +6.9 [+5.7, +8.1] |
+| mathvista | 8 | highest_logp - first_ans | -1.1 [-2.4, +0.2] |
+| mathvista | 8 | highest_self_certainty - first_ans | +1.7 [+0.4, +3.0] |
+| mathvista | 8 | highest_self_certainty - highest_logp | +2.8 [+1.6, +4.1] |
+| mathvista | 8 | self_certainty_rwc - self_consistency | +0.0 [-0.7, +0.8] |
+| mathvista | 8 | self_certainty_rwc - highest_self_certainty | +5.2 [+4.1, +6.5] |
+| mathvista | 8 | highest_visconf - highest_vision | +2.7 [+1.6, +4.0] |
+| mathvista | 8 | highest_visconf - highest_self_certainty | +0.9 [-0.6, +2.3] |
+| mathvista | 8 | visconf_rwc - vision_rwc | +0.9 [+0.2, +1.7] |
+| mathvista | 8 | visconf_rwc - self_certainty_rwc | +0.5 [-0.3, +1.3] |
+| mathvista | 8 | visconf_rwc - self_consistency | +0.5 [-0.3, +1.3] |
+| mathvista | 32 | self_consistency - first_ans | +9.5 [+7.5, +11.4] |
+| mathvista | 32 | highest_logp - first_ans | -5.5 [-8.4, -2.9] |
+| mathvista | 32 | highest_self_certainty - first_ans | +1.1 [-1.6, +3.7] |
+| mathvista | 32 | highest_self_certainty - highest_logp | +6.6 [+3.7, +9.8] |
+| mathvista | 32 | self_certainty_rwc - self_consistency | +0.7 [-0.5, +2.1] |
+| mathvista | 32 | self_certainty_rwc - highest_self_certainty | +9.1 [+6.0, +12.0] |
+| mathvista | 32 | highest_visconf - highest_vision | +4.4 [+1.5, +7.6] |
+| mathvista | 32 | highest_visconf - highest_self_certainty | +3.0 [-0.3, +6.2] |
+| mathvista | 32 | visconf_rwc - vision_rwc | +0.6 [-0.8, +1.9] |
+| mathvista | 32 | visconf_rwc - self_certainty_rwc | +0.1 [-1.2, +1.5] |
+| mathvista | 32 | visconf_rwc - self_consistency | +0.9 [-0.5, +2.4] |

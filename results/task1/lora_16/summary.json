@@ -1,0 +1,56 @@
+{
+  "method": "lora_16",
+  "total_updates": 1250,
+  "examples_seen": 40000,
+  "total_time_sec": 6542.734847307205,
+  "train_time_excl_checkpoints_sec": 6541.935809687246,
+  "checkpoint_time_sec": 0.799037619959563,
+  "setup_time_sec": 0.5146193131804466,
+  "peak_memory_mb": 4928.369140625,
+  "skipped_updates": 0,
+  "skipped_update_indices": [],
+  "trainable_parameters": 10092544,
+  "total_parameters": 606142464,
+  "checkpoints": [
+    {
+      "update": 312,
+      "examples_seen": 9984,
+      "weights_file": "adapter_state.pt",
+      "weights_mb": 38.62060832977295,
+      "optimizer_mb": 77.3648042678833,
+      "total_mb": 115.98541259765625,
+      "save_sec": 0.19966146117076278
+    },
+    {
+      "update": 625,
+      "examples_seen": 20000,
+      "weights_file": "adapter_state.pt",
+      "weights_mb": 38.62060832977295,
+      "optimizer_mb": 77.39465045928955,
+      "total_mb": 116.0152587890625,
+      "save_sec": 0.19382955878973007
+    },
+    {
+      "update": 937,
+      "examples_seen": 29984,
+      "weights_file": "adapter_state.pt",
+      "weights_mb": 38.62060832977295,
+      "optimizer_mb": 77.42443561553955,
+      "total_mb": 116.0450439453125,
+      "save_sec": 0.19597155088558793
+    },
+    {
+      "update": 1250,
+      "examples_seen": 40000,
+      "weights_file": "adapter_state.pt",
+      "weights_mb": 38.62060832977295,
+      "optimizer_mb": 77.4542818069458,
+      "total_mb": 116.07489013671875,
+      "save_sec": 0.20957504911348224
+    }
+  ],
+  "oplora": null,
+  "l2sp": null,
+  "resumed_from": null,
+  "data_fingerprint": "b98e19fce2e4e0705d5209fbee1ab6474c078a982d67ea642effbe7a013a383c"
+}

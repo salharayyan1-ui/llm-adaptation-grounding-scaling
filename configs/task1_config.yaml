@@ -1,0 +1,75 @@
+# Task 1 Configuration: Large Language Model Fine-Tuning
+model:
+  name_or_path: "Qwen/Qwen3-0.6B"
+  enable_thinking: false
+  seed: 6304
+  fp16: true
+  gradient_checkpointing: true
+
+data:
+  dataset_name: "meta-math/MetaMathQA"
+  max_examples: 40000
+  max_seq_length: 2048
+  filter_gsm8k_contamination: true
+  effective_batch_size: 32
+  micro_batch_size: 2
+  gradient_accumulation_steps: 16
+
+optimizer:
+  type: "AdamW"
+  weight_decay: 0.01
+  betas: [0.9, 0.999]
+  eps: 1.0e-8
+  grad_clip_norm: 1.0
+  warmup_updates: 38
+  total_updates: 1250
+  scheduler: "cosine"
+
+experiments:
+  full_ft:
+    lr: 2.0e-5
+    lambda_l2_sp: 0.0
+
+  full_ft_l2_sp:
+    lr: 2.0e-5
+    lambda_l2_sp: 1.0e-3
+
+  lora_4:
+    lr: 2.0e-4
+    rank: 4
+    alpha: 8
+    dropout: 0.05
+    target_modules: ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+
+  lora_16:
+    lr: 2.0e-4
+    rank: 16
+    alpha: 32
+    dropout: 0.05
+    target_modules: ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+
+  oplora_16:
+    lr: 2.0e-4
+    rank: 16
+    alpha: 32
+    protection_rank_k: 128
+    dropout: 0.05
+    target_modules: ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+
+checkpoints:
+  save_updates: [312, 625, 937, 1250]
+  output_dir: "./outputs/task1"
+
+evaluation:
+  benchmarks: ["gsm8k", "hellaswag", "boolq", "arc_easy"]
+  gsm8k_max_new_tokens: 1024
+  eval_conditions:
+    - "baseline"
+    - "full_ft_midpoint"
+    - "full_ft_final"
+    - "full_ft_l2_sp_final"
+    - "lora_4_final"
+    - "lora_16_final"
+    - "oplora_16_final"
+  qualitative_prompts_file: "./configs/first_plot_questions.yaml"
+  qualitative_max_tokens: 512

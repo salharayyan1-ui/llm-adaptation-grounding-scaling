@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Condition & flexible EM (\%) & strict EM (\%) & truncated (\%) & [invalid] fallback (\%) & no-digit extraction (\%) & n \\
+\midrule
+Baseline & 43.44 & 0.0 & 1.06 & 0.0 & 25.09 & 1319.0 \\
+Full FT (mid) & 56.63 & 0.0 & 0.76 & 0.0 & 0.0 & 1319.0 \\
+Full FT & 64.59 & 0.0 & 0.76 & 0.0 & 0.0 & 1319.0 \\
+Full FT + L2-SP & 64.06 & 0.0 & 0.45 & 0.0 & 0.0 & 1319.0 \\
+LoRA-4 & 60.2 & 0.0 & 1.06 & 0.0 & 0.0 & 1319.0 \\
+LoRA-16 & 61.79 & 0.0 & 0.76 & 0.0 & 0.0 & 1319.0 \\
+OPLoRA-16 & 61.71 & 0.0 & 0.45 & 0.0 & 0.0 & 1319.0 \\
+\bottomrule
+\end{tabular}
+\caption{GSM8K accuracy vs answer-extraction and truncation rates. '[invalid] fallback': the harness found no match. 'no-digit extraction': the stock regex returned a number-free string such as '\$\$', i.e. the answer was not read.}
+\label{tab:task1_gsm8k_format}
+\end{table}

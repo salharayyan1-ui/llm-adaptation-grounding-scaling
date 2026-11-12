@@ -1,0 +1,86 @@
+{
+  "condition": "lora_4_final",
+  "model_info": {
+    "condition": "lora_4_final",
+    "variant": "lora_4",
+    "update": 1250,
+    "weights": "adapter_state.pt",
+    "merge_check": {
+      "max_abs_logit_diff": 0.1015625,
+      "mean_abs_logit_diff": 0.006354175973683596,
+      "top1_agreement": 0.9811320900917053,
+      "logit_abs_mean": 2.087296485900879
+    },
+    "unwrapped_modules": 196
+  },
+  "scores": {
+    "gsm8k": {
+      "exact_match_flexible": 0.6019711902956786,
+      "exact_match_strict": 0.0,
+      "truncated_fraction": 0.01061410159211524,
+      "unextractable_fraction_flexible": 0.0,
+      "n": 1319
+    },
+    "hellaswag": {
+      "acc": 0.3759211312487552,
+      "acc_norm": 0.4738099980083649,
+      "n": 10042
+    },
+    "boolq": {
+      "acc": 0.673394495412844,
+      "acc_norm": null,
+      "n": 3270
+    },
+    "arc_easy": {
+      "acc": 0.6536195286195287,
+      "acc_norm": 0.6317340067340067,
+      "n": 2376
+    }
+  },
+  "lm_eval_results": {
+    "gsm8k_cot": {
+      "name": "gsm8k_cot",
+      "alias": "gsm8k_cot",
+      "sample_len": 1319,
+      "exact_match,strict-match": 0.0,
+      "exact_match_stderr,strict-match": 0.0,
+      "exact_match,flexible-extract": 0.6019711902956786,
+      "exact_match_stderr,flexible-extract": 0.013483026939074818
+    },
+    "hellaswag": {
+      "name": "hellaswag",
+      "alias": "hellaswag",
+      "sample_len": 10042,
+      "acc,none": 0.3759211312487552,
+      "acc_stderr,none": 0.004833699243292373,
+      "acc_norm,none": 0.4738099980083649,
+      "acc_norm_stderr,none": 0.004982931565946406
+    },
+    "boolq": {
+      "name": "boolq",
+      "alias": "boolq",
+      "sample_len": 3270,
+      "acc,none": 0.673394495412844,
+      "acc_stderr,none": 0.008202364612924392
+    },
+    "arc_easy": {
+      "name": "arc_easy",
+      "alias": "arc_easy",
+      "sample_len": 2376,
+      "acc,none": 0.6536195286195287,
+      "acc_stderr,none": 0.009763542075695658,
+      "acc_norm,none": 0.6317340067340067,
+      "acc_norm_stderr,none": 0.009897286209010814
+    }
+  },
+  "settings": {
+    "num_fewshot": 0,
+    "dtype": "float16",
+    "gsm8k_max_new_tokens": 1024,
+    "gsm8k_chat_template": true,
+    "enable_thinking": false
+  },
+  "elapsed_sec": 1068.914130449295,
+  "peak_memory_mb": 7033.80712890625,
+  "lm_eval_version": "0.4.13"
+}

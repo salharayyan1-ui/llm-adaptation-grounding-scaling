@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrrr}
+\toprule
+Split & items & questions/captions & by type \\
+\midrule
+train\_captions & 18000 & 18000 &  \\
+dev\_captions & 96 & 96 &  \\
+train\_presence & 2000 & 4000 & presence: 2000 \\
+train\_counting & 2000 & 4000 & counting: 2000 \\
+train\_vqav2 & 1536 & 3072 & vqa\_yes\_no: 640, vqa\_number: 256, vqa\_other: 640 \\
+dev\_grounding & 24 & 48 & presence: 12, counting: 12 \\
+test\_grounding & 64 & 128 & presence: 32, counting: 32 \\
+dev\_vqav2 & 32 & 64 & vqa\_yes\_no: 12, vqa\_number: 8, vqa\_other: 12 \\
+test\_vqav2 & 96 & 192 & vqa\_yes\_no: 36, vqa\_number: 24, vqa\_other: 36 \\
+\bottomrule
+\end{tabular}
+\caption{Sizes of the training / development / test sets (images are disjoint across splits).}
+\label{tab:task2_data}
+\end{table}

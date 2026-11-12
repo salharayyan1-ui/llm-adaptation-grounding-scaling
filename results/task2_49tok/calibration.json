@@ -1,0 +1,10 @@
+{
+  "rule": "ratio of mean L2 norm of Qwen text embeddings to mean L2 norm of unscaled connector visual embeddings over training samples",
+  "scale": 0.07975834095963032,
+  "mean_text_norm": 0.9135208129882812,
+  "mean_unscaled_vis_norm": 11.453608512878418,
+  "calibrated": true,
+  "n_images": 256,
+  "n_distinct_text_tokens": 1431,
+  "data": "training split only"
+}

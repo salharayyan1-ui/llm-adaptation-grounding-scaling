@@ -1,0 +1,78 @@
+{
+  "condition": "baseline",
+  "model_info": {
+    "condition": "baseline",
+    "variant": null,
+    "update": 0
+  },
+  "scores": {
+    "gsm8k": {
+      "exact_match_flexible": 0.43442001516300227,
+      "exact_match_strict": 0.0,
+      "truncated_fraction": 0.01061410159211524,
+      "unextractable_fraction_flexible": 0.0,
+      "n": 1319
+    },
+    "hellaswag": {
+      "acc": 0.37572196773551086,
+      "acc_norm": 0.47341167098187614,
+      "n": 10042
+    },
+    "boolq": {
+      "acc": 0.6434250764525994,
+      "acc_norm": null,
+      "n": 3270
+    },
+    "arc_easy": {
+      "acc": 0.6073232323232324,
+      "acc_norm": 0.5593434343434344,
+      "n": 2376
+    }
+  },
+  "lm_eval_results": {
+    "gsm8k_cot": {
+      "name": "gsm8k_cot",
+      "alias": "gsm8k_cot",
+      "sample_len": 1319,
+      "exact_match,strict-match": 0.0,
+      "exact_match_stderr,strict-match": 0.0,
+      "exact_match,flexible-extract": 0.43442001516300227,
+      "exact_match_stderr,flexible-extract": 0.013653507211411406
+    },
+    "hellaswag": {
+      "name": "hellaswag",
+      "alias": "hellaswag",
+      "sample_len": 10042,
+      "acc,none": 0.37572196773551086,
+      "acc_stderr,none": 0.004833189651626701,
+      "acc_norm,none": 0.47341167098187614,
+      "acc_norm_stderr,none": 0.004982721472407312
+    },
+    "boolq": {
+      "name": "boolq",
+      "alias": "boolq",
+      "sample_len": 3270,
+      "acc,none": 0.6434250764525994,
+      "acc_stderr,none": 0.00837754809941546
+    },
+    "arc_easy": {
+      "name": "arc_easy",
+      "alias": "arc_easy",
+      "sample_len": 2376,
+      "acc,none": 0.6073232323232324,
+      "acc_stderr,none": 0.010020646555538661,
+      "acc_norm,none": 0.5593434343434344,
+      "acc_norm_stderr,none": 0.01018726463571219
+    }
+  },
+  "settings": {
+    "num_fewshot": 0,
+    "dtype": "float16",
+    "gsm8k_max_new_tokens": 1024,
+    "gsm8k_chat_template": true,
+    "enable_thinking": false
+  },
+  "elapsed_sec": 1494.6033205986023,
+  "peak_memory_mb": 7033.80712890625,
+  "lm_eval_version": "0.4.13"
+}

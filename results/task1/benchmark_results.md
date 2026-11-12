@@ -1,0 +1,11 @@
+# Task 1 benchmark results (primary scores, %; deltas in percentage points vs baseline)
+
+| Condition | GSM8K (flex EM) | HellaSwag (acc_norm) | BoolQ (acc) | ARC-Easy (acc_norm) |
+|---|---|---|---|---|
+| baseline | 43.44 | 47.34 | 64.34 | 55.93 |
+| full_ft_midpoint | 56.63 (+13.19) | 45.44 (-1.90) | 60.64 (-3.70) | 61.91 (+5.98) |
+| full_ft_final | 64.59 (+21.15) | 45.93 (-1.41) | 58.69 (-5.66) | 62.71 (+6.78) |
+| full_ft_l2_sp_final | 64.06 (+20.62) | 46.43 (-0.92) | 64.53 (+0.18) | 63.09 (+7.15) |
+| lora_4_final | 60.20 (+16.76) | 47.38 (+0.04) | 67.34 (+3.00) | 63.17 (+7.24) |
+| lora_16_final | 61.79 (+18.35) | 47.40 (+0.06) | 72.35 (+8.01) | 64.02 (+8.08) |
+| oplora_16_final | 61.71 (+18.27) | 47.34 (+0.00) | 71.53 (+7.19) | 63.85 (+7.91) |

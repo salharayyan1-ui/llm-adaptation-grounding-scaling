@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrrrrr}
+\toprule
+Dataset & N & first-answer acc. \% [CI] & oracle coverage \% [CI] & distinct answer groups & total candidate tokens \\
+\midrule
+math & 1 & 63.5 [60.5, 66.1] & 63.5 [60.5, 66.1] & 1.00 & 664 \\
+math & 2 & 63.5 [60.5, 66.1] & 71.8 [68.9, 74.4] & 1.37 & 1334 \\
+math & 4 & 63.5 [60.5, 66.1] & 78.6 [75.9, 81.0] & 1.92 & 2669 \\
+math & 8 & 63.5 [60.5, 66.1] & 83.6 [81.3, 85.7] & 2.75 & 5344 \\
+math & 16 & 63.5 [60.5, 66.1] & 87.8 [85.6, 89.7] & 4.01 & 10680 \\
+math & 32 & 63.5 [60.5, 66.1] & 90.8 [88.8, 92.8] & 5.89 & 21347 \\
+mathvista & 1 & 54.4 [52.0, 56.8] & 54.4 [52.0, 56.8] & 1.00 & 285 \\
+mathvista & 2 & 54.4 [52.0, 56.8] & 66.9 [64.5, 69.3] & 1.43 & 564 \\
+mathvista & 4 & 54.4 [52.0, 56.8] & 76.6 [74.2, 78.9] & 1.98 & 1118 \\
+mathvista & 8 & 54.4 [52.0, 56.8] & 83.6 [81.5, 85.8] & 2.65 & 2226 \\
+mathvista & 16 & 54.4 [52.0, 56.8] & 87.8 [85.7, 89.9] & 3.44 & 4451 \\
+mathvista & 32 & 54.4 [52.0, 56.8] & 90.4 [88.4, 92.5] & 4.39 & 8898 \\
+\bottomrule
+\end{tabular}
+\caption{Repeated-sampling opportunity: accuracy and oracle coverage vs N.}
+\label{tab:task3_opportunity}
+\end{table}

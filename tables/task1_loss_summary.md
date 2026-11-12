@@ -1,0 +1,7 @@
+| Run | final SFT loss (mean of last 50 updates) | first 50 updates | skipped updates (fp16 overflow) |
+|---|---|---|---|
+| Full FT | 0.1841 | 0.3629 | 0.0 |
+| Full FT + L2-SP | 0.1838 | 0.363 | 0.0 |
+| LoRA-4 | 0.2111 | 0.5106 | 0.0 |
+| LoRA-16 | 0.1982 | 0.4168 | 0.0 |
+| OPLoRA-16 | 0.1994 | 0.421 | 0.0 |

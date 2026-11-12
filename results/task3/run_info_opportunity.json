@@ -1,0 +1,46 @@
+{
+  "args": {
+    "step": "opportunity",
+    "dataset": "all",
+    "config": "/workspace/pa3/configs/task3_config.yaml",
+    "data_dir": "./data/ATML-PA3-Data",
+    "output_dir": "./results/task3",
+    "problems_file": null,
+    "metadata_path": "/workspace/official/testmini.json",
+    "allow_missing_metadata": false,
+    "model_revision": null,
+    "gpu": null,
+    "synthetic": false,
+    "dry_run": false,
+    "num_questions": null,
+    "seed": 6304
+  },
+  "scorer_version": "math-verify==0.9.0+safe-numeric-fallback",
+  "versions": {
+    "python": "3.12.15",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "pyarrow": "26.0.1",
+    "torch": "2.11.0+cu128",
+    "transformers": "4.57.6",
+    "math_verify": "unknown"
+  },
+  "synthetic": false,
+  "debug_subset": null,
+  "started": "2026-11-04 11:04:29",
+  "datasets": {
+    "math": {
+      "n_questions": 1000,
+      "n_dev": 200,
+      "n_eval": 800,
+      "mathvista_metadata": null
+    },
+    "mathvista": {
+      "n_questions": 1000,
+      "n_dev": 200,
+      "n_eval": 800,
+      "mathvista_metadata": "metadata present"
+    }
+  },
+  "finished": "2026-11-04 11:15:01"
+}

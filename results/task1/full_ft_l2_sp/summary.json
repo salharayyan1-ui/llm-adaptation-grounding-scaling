@@ -1,0 +1,64 @@
+{
+  "method": "l2_sp",
+  "total_updates": 1250,
+  "examples_seen": 40000,
+  "total_time_sec": 4633.171879053116,
+  "train_time_excl_checkpoints_sec": 4604.054702879861,
+  "checkpoint_time_sec": 29.117176173254848,
+  "setup_time_sec": 0.4838366759940982,
+  "peak_memory_mb": 15826.2958984375,
+  "skipped_updates": 0,
+  "skipped_update_indices": [],
+  "trainable_parameters": 596049920,
+  "total_parameters": 596049920,
+  "checkpoints": [
+    {
+      "update": 312,
+      "examples_seen": 9984,
+      "weights_file": "model_state.pt",
+      "weights_mb": 2273.8707914352417,
+      "optimizer_mb": 4547.814917564392,
+      "total_mb": 6821.685708999634,
+      "save_sec": 7.429763961117715
+    },
+    {
+      "update": 625,
+      "examples_seen": 20000,
+      "weights_file": "model_state.pt",
+      "weights_mb": 2273.8707914352417,
+      "optimizer_mb": 4547.857336997986,
+      "total_mb": 6821.7281284332275,
+      "save_sec": 7.260926054324955
+    },
+    {
+      "update": 937,
+      "examples_seen": 29984,
+      "weights_file": "model_state.pt",
+      "weights_mb": 2273.8707914352417,
+      "optimizer_mb": 4547.899573326111,
+      "total_mb": 6821.7703647613525,
+      "save_sec": 7.18249733466655
+    },
+    {
+      "update": 1250,
+      "examples_seen": 40000,
+      "weights_file": "model_state.pt",
+      "weights_mb": 2273.8707914352417,
+      "optimizer_mb": 4547.941992759705,
+      "total_mb": 6821.812784194946,
+      "save_sec": 7.243988823145628
+    }
+  ],
+  "oplora": null,
+  "l2sp": {
+    "reference_storage_mb": 2273.75,
+    "total_parameters": 596049920,
+    "num_unique_tensors": 310,
+    "lambda_reg": 0.001,
+    "eval_count": 1252,
+    "total_overhead_sec": 57.74689741386101,
+    "avg_penalty_eval_ms": 46.12371997912221
+  },
+  "resumed_from": null,
+  "data_fingerprint": "b98e19fce2e4e0705d5209fbee1ab6474c078a982d67ea642effbe7a013a383c"
+}

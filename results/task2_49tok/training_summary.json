@@ -1,0 +1,91 @@
+{
+  "total_updates": 4500,
+  "training_time_sec": 2325.5877389907837,
+  "peak_memory_mb": 2970.48291015625,
+  "train_seconds_total": 2160.3481316566467,
+  "dev_eval_seconds_total": 163.49327445030212,
+  "note": "stage `seconds` / training_time_sec are wall-clock incl. dev evaluation and checkpoint writes; train_seconds is pure training",
+  "stage_stats": {
+    "1": {
+      "dev_eval_seconds": 66.98654460906982,
+      "trainable_parameters": 1837056,
+      "train_seconds": 834.24325299263,
+      "updates": 2250,
+      "seconds": 890.3163020610809,
+      "peak_memory_mb": 2898.60791015625,
+      "mixture_counts": {
+        "caption": 36000,
+        "presence": 0,
+        "counting": 0,
+        "vqav2": 0
+      }
+    },
+    "2": {
+      "trainable_parameters": 6424576,
+      "train_seconds": 889.2167854309082,
+      "dev_eval_seconds": 64.57772397994995,
+      "updates": 1500,
+      "seconds": 954.6458604335785,
+      "peak_memory_mb": 2783.32373046875,
+      "mixture_counts": {
+        "caption": 6050,
+        "presence": 12254,
+        "counting": 5696,
+        "vqav2": 0
+      }
+    },
+    "3": {
+      "trainable_parameters": 6424576,
+      "train_seconds": 436.8880932331085,
+      "dev_eval_seconds": 31.92900586128235,
+      "updates": 750,
+      "seconds": 469.2767524719238,
+      "peak_memory_mb": 2970.48291015625,
+      "mixture_counts": {
+        "caption": 1236,
+        "presence": 1182,
+        "counting": 1240,
+        "vqav2": 8342
+      }
+    }
+  },
+  "mixture_counts_by_stage": {
+    "1": {
+      "caption": 36000,
+      "presence": 0,
+      "counting": 0,
+      "vqav2": 0
+    },
+    "2": {
+      "caption": 6050,
+      "presence": 12254,
+      "counting": 5696,
+      "vqav2": 0
+    },
+    "3": {
+      "caption": 1236,
+      "presence": 1182,
+      "counting": 1240,
+      "vqav2": 8342
+    }
+  },
+  "skipped_updates": 6,
+  "skipped_update_indices": [
+    1,
+    2,
+    4,
+    12,
+    13,
+    14
+  ],
+  "calibration": {
+    "rule": "ratio of mean L2 norm of Qwen text embeddings to mean L2 norm of unscaled connector visual embeddings over training samples",
+    "scale": 0.07975834095963032,
+    "mean_text_norm": 0.9135208129882812,
+    "mean_unscaled_vis_norm": 11.453608512878418,
+    "calibrated": true,
+    "n_images": 256,
+    "n_distinct_text_tokens": 1431,
+    "data": "training split only"
+  }
+}

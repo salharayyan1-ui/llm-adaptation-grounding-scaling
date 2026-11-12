@@ -1,0 +1,82 @@
+[2026-11-03 15:48:32] =============== queue start (free disk 78G) ===============
+[2026-11-03 15:48:32] START eval_baseline (attempt 1, free disk 78G)
+[2026-11-03 16:06:52] FAIL  eval_baseline rc=1 (attempt 1)
+[2026-11-03 16:07:12] START eval_baseline (attempt 2, free disk 75G)
+[2026-11-03 16:10:15] queue restarted after OOM fix (loglik batch 8, GSM8K caching, OOM auto-retry)
+[2026-11-03 16:10:15] =============== queue start (free disk 75G) ===============
+[2026-11-03 16:10:15] START eval_baseline (attempt 1, free disk 75G)
+[2026-11-03 16:35:17] DONE  eval_baseline
+[2026-11-03 16:35:17] START train_lora_16 (attempt 1, free disk 72G)
+[2026-11-03 16:35:24] PREFLIGHT: queue paused; running 6-update Full FT + L2-SP at real scale
+PREFLIGHT OK: full_ft_l2_sp peak GPU 13.9 GB, 3.9 s/update -> ~1.4 h for 1250 updates; checkpoint 6.7 GB (weights 2.2 + optimizer 4.4), save 7 s
+[2026-11-03 16:36:26] PREFLIGHT finished; restarting queue (free disk 67G)
+[2026-11-03 16:36:27] =============== queue start (free disk 71G) ===============
+[2026-11-03 16:36:27] SKIP  eval_baseline (done)
+[2026-11-03 16:36:27] START train_lora_16 (attempt 1, free disk 71G)
+[2026-11-03 18:26:21] DONE  train_lora_16
+[2026-11-03 18:26:21] START eval_lora_16_final (attempt 1, free disk 71G)
+[2026-11-03 18:42:37] DONE  eval_lora_16_final
+[2026-11-03 18:42:37] START train_lora_4 (attempt 1, free disk 71G)
+[2026-11-03 20:33:03] DONE  train_lora_4
+[2026-11-03 20:33:03] START eval_lora_4_final (attempt 1, free disk 71G)
+[2026-11-03 20:50:59] DONE  eval_lora_4_final
+[2026-11-03 20:50:59] START train_oplora_16 (attempt 1, free disk 71G)
+[2026-11-03 23:34:40] DONE  train_oplora_16
+[2026-11-03 23:34:40] START eval_oplora_16_final (attempt 1, free disk 70G)
+[2026-11-03 23:48:47] DONE  eval_oplora_16_final
+[2026-11-03 23:48:47] START train_full_ft (attempt 1, free disk 70G)
+[2026-11-04 01:06:09] DONE  train_full_ft
+[2026-11-04 01:06:09] START eval_full_ft_midpoint (attempt 1, free disk 43G)
+[2026-11-04 01:22:23] DONE  eval_full_ft_midpoint
+[2026-11-04 01:22:23] START eval_full_ft_final (attempt 1, free disk 43G)
+[2026-11-04 01:39:09] DONE  eval_full_ft_final
+[2026-11-04 01:39:12] pruned full_ft checkpoints (kept weights of: 625 1250) -> free disk 61G
+[2026-11-04 01:39:12] START train_full_ft_l2_sp (attempt 1, free disk 65G)
+[2026-11-04 02:57:18] DONE  train_full_ft_l2_sp
+[2026-11-04 02:57:18] START eval_full_ft_l2_sp_final (attempt 1, free disk 39G)
+[2026-11-04 03:11:55] DONE  eval_full_ft_l2_sp_final
+[2026-11-04 03:11:59] pruned full_ft_l2_sp checkpoints (kept weights of: 1250) -> free disk 63G
+[2026-11-04 03:11:59] START t2_images (attempt 1, free disk 63G)
+[2026-11-04 03:12:05] DONE  t2_images
+[2026-11-04 03:12:05] START t2_cache (attempt 1, free disk 63G)
+[2026-11-04 03:12:29] DONE  t2_cache
+[2026-11-04 03:12:29] START t2_train (attempt 1, free disk 61G)
+[2026-11-04 03:57:53] DONE  t2_train
+[2026-11-04 03:57:53] START t2_eval (attempt 1, free disk 60G)
+[2026-11-04 03:59:48] DONE  t2_eval
+[2026-11-04 03:59:48] conditions available: baseline,full_ft_midpoint,full_ft_final,full_ft_l2_sp_final,lora_4_final,lora_16_final,oplora_16_final
+[2026-11-04 03:59:48] START diag_all (attempt 1, free disk 62G)
+[2026-11-04 04:12:24] DONE  diag_all
+[2026-11-04 04:12:24] START qual_all (attempt 1, free disk 62G)
+[2026-11-04 04:17:32] DONE  qual_all
+[2026-11-04 04:17:32] START aggregate (attempt 1, free disk 62G)
+[2026-11-04 04:17:34] DONE  aggregate
+[2026-11-04 04:17:34] START t2_compress (attempt 1, free disk 62G)
+[2026-11-04 04:58:20] DONE  t2_compress
+[2026-11-04 04:58:20] =============== queue finished (free disk 55G) ===============
+== markers at 2026-11-04 04:58:20 ==
+OK      results/task1/full_ft/summary.json
+OK      results/task1/full_ft_l2_sp/summary.json
+OK      results/task1/lora_16/summary.json
+OK      results/task1/lora_4/summary.json
+OK      results/task1/oplora_16/summary.json
+OK      results/task1/eval/baseline.json
+OK      results/task1/eval/full_ft_final.json
+OK      results/task1/eval/full_ft_l2_sp_final.json
+OK      results/task1/eval/full_ft_midpoint.json
+OK      results/task1/eval/lora_16_final.json
+OK      results/task1/eval/lora_4_final.json
+OK      results/task1/eval/oplora_16_final.json
+OK      results/task2/caching_stats.json
+OK      results/task2/training_summary.json
+OK      results/task2/final_evaluation_report.json
+OK      results/task2_49tok/final_evaluation_report.json
+[2026-11-04 04:58:39] QUAL-REDO start (official first_plot_questions.yaml)
+[2026-11-04 05:03:40] QUAL-REDO finished rc=0
+[2026-11-04 05:03:53] TAIL: corrected mismatched-image control -> re-evaluating the 196-token model
+[2026-11-04 05:05:48] TAIL: t2 eval196 rc=0
+[2026-11-04 05:05:48] TAIL: re-evaluating the 49-token model
+[2026-11-04 05:07:44] TAIL: t2 eval49 rc=0
+[2026-11-04 05:07:44] TAIL: Task 3 live generation (MATH, 50 questions, pinned Qwen2.5-3B-Instruct revision)
+[2026-11-04 06:26:07] TAIL: t3 live rc=0
+[2026-11-04 06:26:07] TAIL: all done

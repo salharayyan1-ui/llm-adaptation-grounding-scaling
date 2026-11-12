@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Condition (layer mean) & ρ\_k (out) & ρ\_k (in) & η & R math & R non-math & R math / non-math \\
+\midrule
+Full FT (mid) & 0.132 & 0.0466 & 0.0137 & 0.0427 & 0.0282 & 1.52 \\
+Full FT & 0.132 & 0.0464 & 0.0142 & 0.0433 & 0.0288 & 1.51 \\
+Full FT + L2-SP & 0.129 & 0.0424 & 0.0109 & 0.037 & 0.0253 & 1.47 \\
+LoRA-4 & 0.128 & 0.0415 & 0.0087 & 0.0543 & 0.0118 & 3.91 \\
+LoRA-16 & 0.131 & 0.0428 & 0.0149 & 0.0388 & 0.0224 & 1.58 \\
+OPLoRA-16 & 1.32e-07 & 1.75e-08 & 0.0143 & 0.0439 & 0.0244 & 1.61 \\
+\bottomrule
+\end{tabular}
+\caption{Layer-averaged weight-space and activation diagnostics.}
+\label{tab:task1_diagnostics}
+\end{table}

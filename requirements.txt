@@ -1,0 +1,17 @@
+torch>=2.4.0
+transformers>=4.48.0
+tokenizers>=0.20.0
+peft>=0.14.0
+accelerate>=1.0.0
+datasets>=3.0.0
+lm-eval>=0.4.3
+math-verify>=0.3.0
+pyarrow>=14.0.0
+fastparquet>=2024.2.0
+scipy>=1.11.0
+numpy>=1.24.0
+pandas>=2.0.0
+pyyaml>=6.0
+pillow>=10.0.0
+tqdm>=4.66.0
+matplotlib>=3.8.0

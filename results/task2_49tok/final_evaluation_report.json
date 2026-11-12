@@ -1,0 +1,377 @@
+{
+  "grounding_suite": {
+    "correct": {
+      "accuracy": {
+        "mean": 0.6953125,
+        "ci_95": [
+          0.6171875,
+          0.78125
+        ]
+      },
+      "pair_accuracy": {
+        "mean": 0.5,
+        "ci_95": [
+          0.375,
+          0.625
+        ]
+      },
+      "identical_answer_rate": 0.28125,
+      "empty_answer_rate": 0.0,
+      "mean_reference_nll": {
+        "mean": 0.7354278347953169,
+        "ci_95": [
+          0.5547061797593639,
+          0.9189760092786234
+        ]
+      },
+      "mean_gen_time_sec": 0.015387477666081395,
+      "subtypes": {
+        "presence": 0.953125,
+        "counting": 0.4375
+      },
+      "n_pairs": 64
+    },
+    "swap": {
+      "accuracy": {
+        "mean": 0.1328125,
+        "ci_95": [
+          0.078125,
+          0.1876953125000007
+        ]
+      },
+      "pair_accuracy": {
+        "mean": 0.015625,
+        "ci_95": [
+          0.0,
+          0.046875
+        ]
+      },
+      "identical_answer_rate": 0.28125,
+      "empty_answer_rate": 0.0,
+      "mean_reference_nll": {
+        "mean": 3.715530369139742,
+        "ci_95": [
+          3.1509669199847847,
+          4.280662961004419
+        ]
+      },
+      "mean_gen_time_sec": 0.012790258071618155,
+      "subtypes": {
+        "presence": 0.046875,
+        "counting": 0.21875
+      },
+      "n_pairs": 64
+    },
+    "mismatched": {
+      "accuracy": {
+        "mean": 0.3828125,
+        "ci_95": [
+          0.3125,
+          0.453125
+        ]
+      },
+      "pair_accuracy": {
+        "mean": 0.078125,
+        "ci_95": [
+          0.015625,
+          0.15625
+        ]
+      },
+      "identical_answer_rate": 0.53125,
+      "empty_answer_rate": 0.0,
+      "mean_reference_nll": {
+        "mean": 2.256527103684391,
+        "ci_95": [
+          1.915262809527944,
+          2.601881101089312
+        ]
+      },
+      "mean_gen_time_sec": 0.013433720083412481,
+      "subtypes": {
+        "presence": 0.484375,
+        "counting": 0.28125
+      },
+      "n_pairs": 64
+    },
+    "no_image": {
+      "accuracy": {
+        "mean": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "pair_accuracy": {
+        "mean": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "identical_answer_rate": 1.0,
+      "empty_answer_rate": 0.0,
+      "mean_reference_nll": {
+        "mean": 6.155614141374826,
+        "ci_95": [
+          5.816512213693932,
+          6.508918239269406
+        ]
+      },
+      "mean_gen_time_sec": 0.08666700873800437,
+      "subtypes": {
+        "presence": 0.0,
+        "counting": 0.0
+      },
+      "n_pairs": 64
+    },
+    "correct_advantage_over_swap": {
+      "delta_accuracy": {
+        "mean": 0.5625,
+        "ci_95": [
+          0.4453125,
+          0.6796875
+        ]
+      },
+      "delta_nll_penalty": {
+        "mean": 2.980102534344425,
+        "ci_95": [
+          2.282290645068038,
+          3.6789855873628112
+        ]
+      }
+    },
+    "correct_advantage_over_mismatched": {
+      "delta_accuracy": {
+        "mean": 0.3125,
+        "ci_95": [
+          0.21875,
+          0.40625
+        ]
+      },
+      "delta_nll_penalty": {
+        "mean": 1.521099268889074,
+        "ci_95": [
+          1.095343169669458,
+          1.9461840920968616
+        ]
+      }
+    },
+    "correct_advantage_over_no_image": {
+      "delta_accuracy": {
+        "mean": 0.6953125,
+        "ci_95": [
+          0.6171875,
+          0.78125
+        ]
+      },
+      "delta_nll_penalty": {
+        "mean": 5.4201863065795095,
+        "ci_95": [
+          4.987325214724453,
+          5.869113218638417
+        ]
+      }
+    },
+    "swap_behavior": {
+      "follows_partner_answer_rate": 0.5859375,
+      "unchanged_vs_correct_image_rate": 0.28125,
+      "other_rate": 0.1328125,
+      "matches_partner_reference_rate": 0.6953125
+    }
+  },
+  "vqav2_suite": {
+    "correct": {
+      "accuracy": {
+        "mean": 0.5791666666666667,
+        "ci_95": [
+          0.5088541666666667,
+          0.6489583333333333
+        ]
+      },
+      "pair_accuracy": {
+        "mean": 0.3125,
+        "ci_95": [
+          0.21875,
+          0.40625
+        ]
+      },
+      "identical_answer_rate": 0.46875,
+      "empty_answer_rate": 0.0,
+      "mean_reference_nll": {
+        "mean": 1.3013931189780124,
+        "ci_95": [
+          1.063691422201373,
+          1.571479121417542
+        ]
+      },
+      "mean_gen_time_sec": 0.017194282062215887,
+      "subtypes": {
+        "vqa_yes_no": 0.6361111111111111,
+        "vqa_number": 0.53125,
+        "vqa_other": 0.5541666666666667
+      },
+      "n_pairs": 96
+    },
+    "swap": {
+      "accuracy": {
+        "mean": 0.30416666666666664,
+        "ci_95": [
+          0.23906250000000004,
+          0.37083333333333335
+        ]
+      },
+      "pair_accuracy": {
+        "mean": 0.0625,
+        "ci_95": [
+          0.020833333333333332,
+          0.11458333333333333
+        ]
+      },
+      "identical_answer_rate": 0.46875,
+      "empty_answer_rate": 0.0,
+      "mean_reference_nll": {
+        "mean": 2.3668117535610995,
+        "ci_95": [
+          1.9797977947169179,
+          2.7819991301163096
+        ]
+      },
+      "mean_gen_time_sec": 0.017293084788737662,
+      "subtypes": {
+        "vqa_yes_no": 0.5180555555555555,
+        "vqa_number": 0.08958333333333333,
+        "vqa_other": 0.23333333333333334
+      },
+      "n_pairs": 96
+    },
+    "mismatched": {
+      "accuracy": {
+        "mean": 0.3260416666666667,
+        "ci_95": [
+          0.26927083333333335,
+          0.3807421875000001
+        ]
+      },
+      "pair_accuracy": {
+        "mean": 0.010416666666666666,
+        "ci_95": [
+          0.0,
+          0.03125
+        ]
+      },
+      "identical_answer_rate": 0.59375,
+      "empty_answer_rate": 0.0,
+      "mean_reference_nll": {
+        "mean": 2.0816405871709094,
+        "ci_95": [
+          1.8010688392610368,
+          2.386608058375247
+        ]
+      },
+      "mean_gen_time_sec": 0.017989689510917135,
+      "subtypes": {
+        "vqa_yes_no": 0.4888888888888888,
+        "vqa_number": 0.2125,
+        "vqa_other": 0.23888888888888893
+      },
+      "n_pairs": 96
+    },
+    "no_image": {
+      "accuracy": {
+        "mean": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "pair_accuracy": {
+        "mean": 0.0,
+        "ci_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "identical_answer_rate": 1.0,
+      "empty_answer_rate": 0.0,
+      "mean_reference_nll": {
+        "mean": 8.725766697277626,
+        "ci_95": [
+          8.024269876163453,
+          9.466935112606734
+        ]
+      },
+      "mean_gen_time_sec": 0.10063478964245103,
+      "subtypes": {
+        "vqa_yes_no": 0.0,
+        "vqa_number": 0.0,
+        "vqa_other": 0.0
+      },
+      "n_pairs": 96
+    },
+    "correct_advantage_over_swap": {
+      "delta_accuracy": {
+        "mean": 0.275,
+        "ci_95": [
+          0.1656119791666667,
+          0.3807291666666666
+        ]
+      },
+      "delta_nll_penalty": {
+        "mean": 1.065418634583087,
+        "ci_95": [
+          0.6700645028366127,
+          1.4919278826543936
+        ]
+      }
+    },
+    "correct_advantage_over_mismatched": {
+      "delta_accuracy": {
+        "mean": 0.253125,
+        "ci_95": [
+          0.16874999999999998,
+          0.3364583333333333
+        ]
+      },
+      "delta_nll_penalty": {
+        "mean": 0.780247468192897,
+        "ci_95": [
+          0.5170274775415209,
+          1.065424824636769
+        ]
+      }
+    },
+    "correct_advantage_over_no_image": {
+      "delta_accuracy": {
+        "mean": 0.5791666666666667,
+        "ci_95": [
+          0.5088541666666667,
+          0.6489583333333333
+        ]
+      },
+      "delta_nll_penalty": {
+        "mean": 7.424373578299613,
+        "ci_95": [
+          6.710531094650772,
+          8.147943436340816
+        ]
+      }
+    },
+    "swap_behavior": {
+      "follows_partner_answer_rate": 0.3541666666666667,
+      "unchanged_vs_correct_image_rate": 0.46875,
+      "other_rate": 0.17708333333333334,
+      "matches_partner_reference_rate": 0.5416666666666666
+    }
+  },
+  "eval_settings": {
+    "n_resamples": 4000,
+    "seed": 6304,
+    "batch_size": 8,
+    "max_new_tokens": 16,
+    "num_visual_tokens": 49,
+    "num_grounding_pairs": 64,
+    "num_vqav2_pairs": 96,
+    "eval_seconds": 106.55267133703455,
+    "peak_memory_mb": 1255.88818359375
+  }
+}

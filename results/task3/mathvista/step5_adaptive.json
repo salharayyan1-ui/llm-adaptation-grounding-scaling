@@ -1,0 +1,290 @@
+{
+  "dev_search": {
+    "baseline_sc32": {
+      "mean_accuracy": 0.6375,
+      "mean_tokens": 9217.485,
+      "target_accuracy": 0.6275
+    },
+    "agreement": {
+      "best_params": {
+        "tau": 0.5,
+        "mean_accuracy": 0.6275,
+        "mean_tokens": 3220.913,
+        "meets_target": true,
+        "policy_type": "agreement"
+      },
+      "grid": [
+        {
+          "tau": 0.5,
+          "mean_accuracy": 0.6275,
+          "mean_tokens": 3220.913,
+          "meets_target": true
+        },
+        {
+          "tau": 0.625,
+          "mean_accuracy": 0.644,
+          "mean_tokens": 5224.107,
+          "meets_target": true
+        },
+        {
+          "tau": 0.75,
+          "mean_accuracy": 0.644,
+          "mean_tokens": 5635.9465,
+          "meets_target": true
+        },
+        {
+          "tau": 0.875,
+          "mean_accuracy": 0.6385,
+          "mean_tokens": 7124.1465,
+          "meets_target": true
+        },
+        {
+          "tau": 1.0,
+          "mean_accuracy": 0.6385,
+          "mean_tokens": 7459.5675,
+          "meets_target": true
+        }
+      ]
+    },
+    "quality_aware": {
+      "best_params": {
+        "tau": 0.5,
+        "gamma": 0.0,
+        "mean_accuracy": 0.636,
+        "mean_tokens": 3709.164,
+        "meets_target": true,
+        "policy_type": "quality"
+      },
+      "grid": [
+        {
+          "tau": 0.5,
+          "gamma": 0.0,
+          "mean_accuracy": 0.636,
+          "mean_tokens": 3709.164,
+          "meets_target": true
+        },
+        {
+          "tau": 0.5,
+          "gamma": 0.1,
+          "mean_accuracy": 0.641,
+          "mean_tokens": 4068.358,
+          "meets_target": true
+        },
+        {
+          "tau": 0.5,
+          "gamma": 0.25,
+          "mean_accuracy": 0.641,
+          "mean_tokens": 4447.855,
+          "meets_target": true
+        },
+        {
+          "tau": 0.5,
+          "gamma": 0.5,
+          "mean_accuracy": 0.64,
+          "mean_tokens": 5401.402,
+          "meets_target": true
+        },
+        {
+          "tau": 0.625,
+          "gamma": 0.0,
+          "mean_accuracy": 0.6445,
+          "mean_tokens": 5274.661,
+          "meets_target": true
+        },
+        {
+          "tau": 0.625,
+          "gamma": 0.1,
+          "mean_accuracy": 0.643,
+          "mean_tokens": 5409.453,
+          "meets_target": true
+        },
+        {
+          "tau": 0.625,
+          "gamma": 0.25,
+          "mean_accuracy": 0.643,
+          "mean_tokens": 5465.527,
+          "meets_target": true
+        },
+        {
+          "tau": 0.625,
+          "gamma": 0.5,
+          "mean_accuracy": 0.641,
+          "mean_tokens": 5873.453,
+          "meets_target": true
+        },
+        {
+          "tau": 0.75,
+          "gamma": 0.0,
+          "mean_accuracy": 0.645,
+          "mean_tokens": 5669.225,
+          "meets_target": true
+        },
+        {
+          "tau": 0.75,
+          "gamma": 0.1,
+          "mean_accuracy": 0.644,
+          "mean_tokens": 5826.1525,
+          "meets_target": true
+        },
+        {
+          "tau": 0.75,
+          "gamma": 0.25,
+          "mean_accuracy": 0.644,
+          "mean_tokens": 5830.586,
+          "meets_target": true
+        },
+        {
+          "tau": 0.75,
+          "gamma": 0.5,
+          "mean_accuracy": 0.6415,
+          "mean_tokens": 6102.937,
+          "meets_target": true
+        },
+        {
+          "tau": 0.875,
+          "gamma": 0.0,
+          "mean_accuracy": 0.6385,
+          "mean_tokens": 7124.1465,
+          "meets_target": true
+        },
+        {
+          "tau": 0.875,
+          "gamma": 0.1,
+          "mean_accuracy": 0.6385,
+          "mean_tokens": 7124.1465,
+          "meets_target": true
+        },
+        {
+          "tau": 0.875,
+          "gamma": 0.25,
+          "mean_accuracy": 0.6385,
+          "mean_tokens": 7124.1465,
+          "meets_target": true
+        },
+        {
+          "tau": 0.875,
+          "gamma": 0.5,
+          "mean_accuracy": 0.6385,
+          "mean_tokens": 7133.0955,
+          "meets_target": true
+        },
+        {
+          "tau": 1.0,
+          "gamma": 0.0,
+          "mean_accuracy": 0.6385,
+          "mean_tokens": 7459.5675,
+          "meets_target": true
+        },
+        {
+          "tau": 1.0,
+          "gamma": 0.1,
+          "mean_accuracy": 0.6385,
+          "mean_tokens": 7459.5675,
+          "meets_target": true
+        },
+        {
+          "tau": 1.0,
+          "gamma": 0.25,
+          "mean_accuracy": 0.6385,
+          "mean_tokens": 7459.5675,
+          "meets_target": true
+        },
+        {
+          "tau": 1.0,
+          "gamma": 0.5,
+          "mean_accuracy": 0.6385,
+          "mean_tokens": 7459.5675,
+          "meets_target": true
+        }
+      ]
+    }
+  },
+  "eval_agreement": {
+    "policy": "agreement(tau=0.5,gamma=0.0)",
+    "accuracy": {
+      "mean": 0.630375,
+      "ci_lower": 0.6034968749999999,
+      "ci_upper": 0.6594999999999999
+    },
+    "mean_tokens": 2908.326125,
+    "mean_rollouts": 8.4025,
+    "stopping_distribution": {
+      "4": 0.770125,
+      "8": 0.07075,
+      "16": 0.021,
+      "32": 0.138125
+    },
+    "stopping_counts": {
+      "4": 6161,
+      "8": 566,
+      "16": 168,
+      "32": 1105
+    },
+    "early_stop_analysis": {
+      "total_early_incorrect_stops": 2054,
+      "recovered_by_fixed32_count": 309,
+      "recovered_by_fixed32_rate": 0.1504381694255112
+    }
+  },
+  "eval_quality_aware": {
+    "policy": "quality(tau=0.5,gamma=0.0)",
+    "accuracy": {
+      "mean": 0.634125,
+      "ci_lower": 0.6068687500000001,
+      "ci_upper": 0.6638749999999999
+    },
+    "mean_tokens": 3324.0017500000004,
+    "mean_rollouts": 9.676499999999999,
+    "stopping_distribution": {
+      "4": 0.698375,
+      "8": 0.094875,
+      "16": 0.03075,
+      "32": 0.176
+    },
+    "stopping_counts": {
+      "4": 5587,
+      "8": 759,
+      "16": 246,
+      "32": 1408
+    },
+    "early_stop_analysis": {
+      "total_early_incorrect_stops": 1825,
+      "recovered_by_fixed32_count": 246,
+      "recovered_by_fixed32_rate": 0.13479452054794522
+    }
+  },
+  "eval_fixed_budget_self_consistency": {
+    "4": {
+      "accuracy": {
+        "mean": 0.593625,
+        "ci_lower": 0.5679843750000001,
+        "ci_upper": 0.621253125
+      },
+      "mean_tokens": 1117.58
+    },
+    "8": {
+      "accuracy": {
+        "mean": 0.613125,
+        "ci_lower": 0.585490625,
+        "ci_upper": 0.64225625
+      },
+      "mean_tokens": 2226.1764999999996
+    },
+    "16": {
+      "accuracy": {
+        "mean": 0.629,
+        "ci_lower": 0.600609375,
+        "ci_upper": 0.659125
+      },
+      "mean_tokens": 4451.11
+    },
+    "32": {
+      "accuracy": {
+        "mean": 0.6388750000000001,
+        "ci_lower": 0.606990625,
+        "ci_upper": 0.6708750000000001
+      },
+      "mean_tokens": 8897.7575
+    }
+  }
+}

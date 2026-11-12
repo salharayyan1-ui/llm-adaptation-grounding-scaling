@@ -1,0 +1,51 @@
+{
+  "count": 50,
+  "accuracy": {
+    "single": 0.64,
+    "parallel_sc": 0.6,
+    "refinement": 0.64
+  },
+  "mean_output_tokens": {
+    "single": 710.22,
+    "parallel_sc": 1857.6,
+    "refinement": 1177.9
+  },
+  "mean_input_tokens": {
+    "single": 108.38,
+    "parallel_sc": 325.14,
+    "refinement": 870.62
+  },
+  "mean_runtime_sec": {
+    "single": 21.268219715747982,
+    "parallel_sc": 55.7187564626988,
+    "refinement": 35.23387481714599
+  },
+  "truncation_rate": {
+    "single": 0.0,
+    "parallel_sc": 0.16,
+    "refinement": 0.02
+  },
+  "extraction_rate": {
+    "single": 1.0,
+    "parallel_sc": 0.84,
+    "refinement": 0.98
+  },
+  "max_peak_memory_mb": {
+    "single": 5991.259765625,
+    "parallel_sc": 5944.26025390625,
+    "refinement": 6035.560546875
+  },
+  "initial_response_truncation_rate": 0.16,
+  "transitions_count": {
+    "wrong_to_correct": 3,
+    "correct_to_wrong": 0,
+    "correct_to_correct": 29,
+    "wrong_to_wrong": 18
+  },
+  "transitions_pct": {
+    "wrong_to_correct": 0.06,
+    "correct_to_wrong": 0.0,
+    "correct_to_correct": 0.58,
+    "wrong_to_wrong": 0.36
+  }
+}

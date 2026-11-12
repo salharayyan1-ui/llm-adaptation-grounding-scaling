@@ -1,0 +1,59 @@
+{
+  "association_summary": {
+    "length~correct": {
+      "mean_spearman": -0.07715778688238291,
+      "ci_lower": -0.10459845090584804,
+      "ci_upper": -0.04969628504077934,
+      "n_questions": 468
+    },
+    "logp~correct": {
+      "mean_spearman": 0.13548568526313204,
+      "ci_lower": 0.11187919464176348,
+      "ci_upper": 0.16010583605168738,
+      "n_questions": 468
+    },
+    "logp~length": {
+      "mean_spearman": 0.22450990220048075,
+      "ci_lower": 0.20091059600981234,
+      "ci_upper": 0.25060823728258264,
+      "n_questions": 800
+    },
+    "self_certainty~correct": {
+      "mean_spearman": 0.19978399851220124,
+      "ci_lower": 0.1756655748778057,
+      "ci_upper": 0.22213495457553,
+      "n_questions": 468
+    },
+    "self_certainty~length": {
+      "mean_spearman": -0.16109595817293734,
+      "ci_lower": -0.18698885070706942,
+      "ci_upper": -0.13715654386131512,
+      "n_questions": 800
+    }
+  },
+  "illustrative_trajectories": [],
+  "quartile_summary": {
+    "length": {
+      "mean_diff": -0.0459375,
+      "ci_lower": -0.0628125,
+      "ci_upper": -0.029375
+    },
+    "logp": {
+      "mean_diff": 0.07890625,
+      "ci_lower": 0.06249609375,
+      "ci_upper": 0.0937578125
+    },
+    "self_certainty": {
+      "mean_diff": 0.120625,
+      "ci_lower": 0.10421875,
+      "ci_upper": 0.13750390625
+    }
+  },
+  "control_summary": {
+    "shortest_baseline_acc": 0.62125,
+    "ci_lower": 0.58625,
+    "ci_upper": 0.655
+  },
+  "correlations_summary": {},
+  "ablation_summary": {}
+}
