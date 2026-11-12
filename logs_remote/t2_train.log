@@ -1,0 +1,166 @@
+2026-11-04 03:12:37,346 INFO task2_vlm.models: Loading LLM Qwen/Qwen3-0.6B...
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-04 03:12:39,963 INFO task2_vlm.models: Connector calibrated: text_norm=0.9135, vis_norm=15.8834, scale=0.0575
+2026-11-04 03:12:39,964 INFO task2_vlm.trainer: Connector calibration scale = 0.0575
+2026-11-04 03:12:39,980 INFO task2_vlm.trainer: Starting curriculum training (4500 updates)
+2026-11-04 03:12:39,980 INFO task2_vlm.trainer: Dev evaluation at update 0 (stage 1)
+2026-11-04 03:12:45,430 INFO task2_vlm.trainer: [grounding] {'nll_correct': 12.602186153332392, 'nll_swap': 12.686658829450607, 'nll_no_image': 10.95543118317922, 'delta_nll': 0.08447267611821552}
+2026-11-04 03:12:51,098 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 12.916166190057993, 'nll_swap': 13.063655849546194, 'nll_no_image': 12.23925969004631, 'delta_nll': 0.14748965948820114}
+2026-11-04 03:12:51,099 INFO task2_vlm.trainer: Stage 1: 1 param groups, peak LRs [0.001], trainable params 1,837,056
+2026-11-04 03:12:51,099 INFO task2_vlm.trainer: === Stage 1: 2250 updates (starting at step 0) ===
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+2026-11-04 03:13:15,778 INFO task2_vlm.trainer: Stage 1 [50/2250] update 50 loss 3.6156 lr 4.46e-04 mem 4949MB
+2026-11-04 03:13:40,671 INFO task2_vlm.trainer: Stage 1 [100/2250] update 100 loss 3.1620 lr 8.93e-04 mem 4949MB
+2026-11-04 03:14:05,482 INFO task2_vlm.trainer: Stage 1 [150/2250] update 150 loss 3.5164 lr 9.99e-04 mem 4949MB
+2026-11-04 03:14:30,528 INFO task2_vlm.trainer: Stage 1 [200/2250] update 200 loss 3.1542 lr 9.96e-04 mem 4949MB
+2026-11-04 03:14:55,686 INFO task2_vlm.trainer: Stage 1 [250/2250] update 250 loss 3.0652 lr 9.91e-04 mem 4949MB
+2026-11-04 03:14:55,711 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_250.pt
+2026-11-04 03:15:20,566 INFO task2_vlm.trainer: Stage 1 [300/2250] update 300 loss 2.8204 lr 9.83e-04 mem 4949MB
+2026-11-04 03:15:45,483 INFO task2_vlm.trainer: Stage 1 [350/2250] update 350 loss 3.1210 lr 9.73e-04 mem 4949MB
+2026-11-04 03:16:10,784 INFO task2_vlm.trainer: Stage 1 [400/2250] update 400 loss 2.7814 lr 9.60e-04 mem 4949MB
+2026-11-04 03:16:35,810 INFO task2_vlm.trainer: Stage 1 [450/2250] update 450 loss 2.4295 lr 9.46e-04 mem 4949MB
+2026-11-04 03:17:00,641 INFO task2_vlm.trainer: Stage 1 [500/2250] update 500 loss 2.4407 lr 9.29e-04 mem 4949MB
+2026-11-04 03:17:00,665 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_500.pt
+2026-11-04 03:17:00,665 INFO task2_vlm.trainer: Dev evaluation at update 500 (stage 1)
+2026-11-04 03:17:06,013 INFO task2_vlm.trainer: [grounding] {'nll_correct': 8.450248489777247, 'nll_swap': 8.589083154996237, 'nll_no_image': 10.95543118317922, 'delta_nll': 0.13883466521899024}
+2026-11-04 03:17:11,701 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 8.703226201236248, 'nll_swap': 8.727748677134514, 'nll_no_image': 12.23925969004631, 'delta_nll': 0.02452247589826584}
+2026-11-04 03:17:36,588 INFO task2_vlm.trainer: Stage 1 [550/2250] update 550 loss 2.6500 lr 9.10e-04 mem 4949MB
+2026-11-04 03:18:01,607 INFO task2_vlm.trainer: Stage 1 [600/2250] update 600 loss 2.8039 lr 8.89e-04 mem 4949MB
+2026-11-04 03:18:26,833 INFO task2_vlm.trainer: Stage 1 [650/2250] update 650 loss 2.6366 lr 8.67e-04 mem 4978MB
+2026-11-04 03:18:51,677 INFO task2_vlm.trainer: Stage 1 [700/2250] update 700 loss 2.4740 lr 8.42e-04 mem 4978MB
+2026-11-04 03:19:16,655 INFO task2_vlm.trainer: Stage 1 [750/2250] update 750 loss 3.1774 lr 8.16e-04 mem 4978MB
+2026-11-04 03:19:16,680 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_750.pt
+2026-11-04 03:19:41,977 INFO task2_vlm.trainer: Stage 1 [800/2250] update 800 loss 2.6474 lr 7.89e-04 mem 4978MB
+2026-11-04 03:20:06,892 INFO task2_vlm.trainer: Stage 1 [850/2250] update 850 loss 2.9075 lr 7.60e-04 mem 4978MB
+2026-11-04 03:20:31,849 INFO task2_vlm.trainer: Stage 1 [900/2250] update 900 loss 2.5914 lr 7.31e-04 mem 4978MB
+2026-11-04 03:20:57,116 INFO task2_vlm.trainer: Stage 1 [950/2250] update 950 loss 2.2878 lr 7.00e-04 mem 5014MB
+2026-11-04 03:21:22,048 INFO task2_vlm.trainer: Stage 1 [1000/2250] update 1000 loss 2.2627 lr 6.68e-04 mem 5014MB
+2026-11-04 03:21:22,073 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_1000.pt
+2026-11-04 03:21:22,074 INFO task2_vlm.trainer: Dev evaluation at update 1000 (stage 1)
+2026-11-04 03:21:27,480 INFO task2_vlm.trainer: [grounding] {'nll_correct': 9.670028040806452, 'nll_swap': 9.655949264764786, 'nll_no_image': 10.95543118317922, 'delta_nll': -0.014078776041666075}
+2026-11-04 03:21:33,474 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 9.390142399817705, 'nll_swap': 9.47827623784542, 'nll_no_image': 12.23925969004631, 'delta_nll': 0.08813383802771568}
+2026-11-04 03:21:58,384 INFO task2_vlm.trainer: Stage 1 [1050/2250] update 1050 loss 2.5587 lr 6.36e-04 mem 5014MB
+2026-11-04 03:22:23,291 INFO task2_vlm.trainer: Stage 1 [1100/2250] update 1100 loss 2.5457 lr 6.03e-04 mem 5014MB
+2026-11-04 03:22:48,504 INFO task2_vlm.trainer: Stage 1 [1150/2250] update 1150 loss 2.7279 lr 5.70e-04 mem 5014MB
+2026-11-04 03:23:13,354 INFO task2_vlm.trainer: Stage 1 [1200/2250] update 1200 loss 2.7903 lr 5.37e-04 mem 5014MB
+2026-11-04 03:23:38,238 INFO task2_vlm.trainer: Stage 1 [1250/2250] update 1250 loss 2.5538 lr 5.04e-04 mem 5014MB
+2026-11-04 03:23:38,266 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_1250.pt
+2026-11-04 03:24:03,556 INFO task2_vlm.trainer: Stage 1 [1300/2250] update 1300 loss 2.6712 lr 4.72e-04 mem 5014MB
+2026-11-04 03:24:28,459 INFO task2_vlm.trainer: Stage 1 [1350/2250] update 1350 loss 2.6252 lr 4.39e-04 mem 5014MB
+2026-11-04 03:24:53,617 INFO task2_vlm.trainer: Stage 1 [1400/2250] update 1400 loss 2.7623 lr 4.08e-04 mem 5014MB
+2026-11-04 03:25:18,945 INFO task2_vlm.trainer: Stage 1 [1450/2250] update 1450 loss 2.6856 lr 3.77e-04 mem 5014MB
+2026-11-04 03:25:43,887 INFO task2_vlm.trainer: Stage 1 [1500/2250] update 1500 loss 2.3071 lr 3.47e-04 mem 5014MB
+2026-11-04 03:25:43,915 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_1500.pt
+2026-11-04 03:25:43,915 INFO task2_vlm.trainer: Dev evaluation at update 1500 (stage 1)
+2026-11-04 03:25:49,440 INFO task2_vlm.trainer: [grounding] {'nll_correct': 9.315038988987604, 'nll_swap': 9.353938738505045, 'nll_no_image': 10.95543118317922, 'delta_nll': 0.038899749517440796}
+2026-11-04 03:25:55,498 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 9.054510369896889, 'nll_swap': 9.296908222138882, 'nll_no_image': 12.23925969004631, 'delta_nll': 0.24239785224199295}
+2026-11-04 03:26:20,467 INFO task2_vlm.trainer: Stage 1 [1550/2250] update 1550 loss 2.6183 lr 3.18e-04 mem 5014MB
+2026-11-04 03:26:45,443 INFO task2_vlm.trainer: Stage 1 [1600/2250] update 1600 loss 2.8654 lr 2.90e-04 mem 5014MB
+2026-11-04 03:27:10,790 INFO task2_vlm.trainer: Stage 1 [1650/2250] update 1650 loss 2.3624 lr 2.64e-04 mem 5014MB
+2026-11-04 03:27:35,809 INFO task2_vlm.trainer: Stage 1 [1700/2250] update 1700 loss 2.3209 lr 2.39e-04 mem 5014MB
+2026-11-04 03:28:00,685 INFO task2_vlm.trainer: Stage 1 [1750/2250] update 1750 loss 2.7588 lr 2.16e-04 mem 5021MB
+2026-11-04 03:28:00,712 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_1750.pt
+2026-11-04 03:28:25,965 INFO task2_vlm.trainer: Stage 1 [1800/2250] update 1800 loss 2.4165 lr 1.95e-04 mem 5021MB
+2026-11-04 03:28:50,890 INFO task2_vlm.trainer: Stage 1 [1850/2250] update 1850 loss 2.0338 lr 1.76e-04 mem 5021MB
+2026-11-04 03:29:15,860 INFO task2_vlm.trainer: Stage 1 [1900/2250] update 1900 loss 2.5937 lr 1.58e-04 mem 5021MB
+2026-11-04 03:29:41,247 INFO task2_vlm.trainer: Stage 1 [1950/2250] update 1950 loss 2.3358 lr 1.43e-04 mem 5021MB
+2026-11-04 03:30:06,203 INFO task2_vlm.trainer: Stage 1 [2000/2250] update 2000 loss 2.4782 lr 1.30e-04 mem 5021MB
+2026-11-04 03:30:06,233 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_2000.pt
+2026-11-04 03:30:06,233 INFO task2_vlm.trainer: Dev evaluation at update 2000 (stage 1)
+2026-11-04 03:30:11,526 INFO task2_vlm.trainer: [grounding] {'nll_correct': 9.670304407676062, 'nll_swap': 9.678767909606298, 'nll_no_image': 10.95543118317922, 'delta_nll': 0.008463501930236816}
+2026-11-04 03:30:17,220 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 9.079272493720055, 'nll_swap': 9.369530364871025, 'nll_no_image': 12.23925969004631, 'delta_nll': 0.29025787115097046}
+2026-11-04 03:30:42,208 INFO task2_vlm.trainer: Stage 1 [2050/2250] update 2050 loss 2.6248 lr 1.19e-04 mem 5021MB
+2026-11-04 03:31:07,086 INFO task2_vlm.trainer: Stage 1 [2100/2250] update 2100 loss 2.4207 lr 1.11e-04 mem 5021MB
+2026-11-04 03:31:32,436 INFO task2_vlm.trainer: Stage 1 [2150/2250] update 2150 loss 2.0748 lr 1.05e-04 mem 5021MB
+2026-11-04 03:31:57,403 INFO task2_vlm.trainer: Stage 1 [2200/2250] update 2200 loss 2.4371 lr 1.01e-04 mem 5021MB
+2026-11-04 03:32:22,400 INFO task2_vlm.trainer: Stage 1 [2250/2250] update 2250 loss 2.1024 lr 1.00e-04 mem 5021MB
+2026-11-04 03:32:22,430 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_2250.pt
+2026-11-04 03:32:22,430 INFO task2_vlm.trainer: --- Completed stage 1 at update 2250 ---
+2026-11-04 03:32:22,437 INFO task2_vlm.models: Saved connector weights to outputs/task2/connector_stage_1.pt
+2026-11-04 03:32:22,437 INFO task2_vlm.trainer: Dev evaluation at update 2250 (stage 1)
+2026-11-04 03:32:27,734 INFO task2_vlm.trainer: [grounding] {'nll_correct': 9.542123963435492, 'nll_swap': 9.58867343266805, 'nll_no_image': 10.95543118317922, 'delta_nll': 0.046549469232559204}
+2026-11-04 03:32:33,428 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 9.02596240490675, 'nll_swap': 9.307947225868702, 'nll_no_image': 12.23925969004631, 'delta_nll': 0.2819848209619522}
+2026-11-04 03:32:33,557 INFO task2_vlm.models: LoRA enabled: 6,424,576 trainable / 602,474,496 total parameters.
+2026-11-04 03:32:33,560 INFO task2_vlm.trainer: Stage 2: 2 param groups, peak LRs [0.0001, 2e-05], trainable params 6,424,576
+2026-11-04 03:32:33,560 INFO task2_vlm.trainer: === Stage 2: 1500 updates (starting at step 0) ===
+2026-11-04 03:33:05,022 INFO task2_vlm.trainer: Stage 2 [50/1500] update 2300 loss 1.6693 lr 6.67e-05 mem 4793MB
+2026-11-04 03:33:36,564 INFO task2_vlm.trainer: Stage 2 [100/1500] update 2350 loss 1.1220 lr 9.99e-05 mem 4793MB
+2026-11-04 03:34:07,917 INFO task2_vlm.trainer: Stage 2 [150/1500] update 2400 loss 1.3045 lr 9.94e-05 mem 4793MB
+2026-11-04 03:34:39,317 INFO task2_vlm.trainer: Stage 2 [200/1500] update 2450 loss 0.8584 lr 9.83e-05 mem 4793MB
+2026-11-04 03:35:10,672 INFO task2_vlm.trainer: Stage 2 [250/1500] update 2500 loss 0.2457 lr 9.67e-05 mem 4793MB
+2026-11-04 03:35:10,800 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_2500.pt
+2026-11-04 03:35:10,801 INFO task2_vlm.trainer: Dev evaluation at update 2500 (stage 2)
+2026-11-04 03:35:18,390 INFO task2_vlm.trainer: [grounding] {'nll_correct': 0.9321012472331253, 'nll_swap': 2.5160856385094426, 'nll_no_image': 7.937104751666387, 'delta_nll': 1.5839843912763172}
+2026-11-04 03:35:27,003 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 2.033445638291596, 'nll_swap': 2.4779129769012798, 'nll_no_image': 10.705214709043503, 'delta_nll': 0.4444673386096838}
+2026-11-04 03:35:58,718 INFO task2_vlm.trainer: Stage 2 [300/1500] update 2550 loss 0.6261 lr 9.46e-05 mem 4793MB
+2026-11-04 03:36:30,458 INFO task2_vlm.trainer: Stage 2 [350/1500] update 2600 loss 0.7080 lr 9.20e-05 mem 4793MB
+2026-11-04 03:37:02,107 INFO task2_vlm.trainer: Stage 2 [400/1500] update 2650 loss 0.9252 lr 8.89e-05 mem 4793MB
+2026-11-04 03:37:33,971 INFO task2_vlm.trainer: Stage 2 [450/1500] update 2700 loss 0.5345 lr 8.55e-05 mem 4793MB
+2026-11-04 03:38:05,800 INFO task2_vlm.trainer: Stage 2 [500/1500] update 2750 loss 0.5824 lr 8.17e-05 mem 4826MB
+2026-11-04 03:38:05,930 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_2750.pt
+2026-11-04 03:38:37,843 INFO task2_vlm.trainer: Stage 2 [550/1500] update 2800 loss 1.0826 lr 7.75e-05 mem 4826MB
+2026-11-04 03:39:09,709 INFO task2_vlm.trainer: Stage 2 [600/1500] update 2850 loss 1.3956 lr 7.31e-05 mem 4826MB
+2026-11-04 03:39:41,283 INFO task2_vlm.trainer: Stage 2 [650/1500] update 2900 loss 1.0987 lr 6.84e-05 mem 4826MB
+2026-11-04 03:40:12,922 INFO task2_vlm.trainer: Stage 2 [700/1500] update 2950 loss 0.7498 lr 6.36e-05 mem 4826MB
+2026-11-04 03:40:44,483 INFO task2_vlm.trainer: Stage 2 [750/1500] update 3000 loss 0.3721 lr 5.87e-05 mem 4826MB
+2026-11-04 03:40:44,613 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_3000.pt
+2026-11-04 03:40:44,614 INFO task2_vlm.trainer: Dev evaluation at update 3000 (stage 2)
+2026-11-04 03:40:52,228 INFO task2_vlm.trainer: [grounding] {'nll_correct': 1.0947457496722564, 'nll_swap': 3.914732751334668, 'nll_no_image': 7.345928221940994, 'delta_nll': 2.819987001662412}
+2026-11-04 03:41:01,087 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 2.33563901816251, 'nll_swap': 2.989362638025341, 'nll_no_image': 10.770326483994722, 'delta_nll': 0.6537236198628307}
+2026-11-04 03:41:32,233 INFO task2_vlm.trainer: Stage 2 [800/1500] update 3050 loss 0.2009 lr 5.38e-05 mem 4826MB
+2026-11-04 03:42:03,514 INFO task2_vlm.trainer: Stage 2 [850/1500] update 3100 loss 1.0909 lr 4.88e-05 mem 4826MB
+2026-11-04 03:42:34,900 INFO task2_vlm.trainer: Stage 2 [900/1500] update 3150 loss 1.2873 lr 4.40e-05 mem 4826MB
+2026-11-04 03:43:06,558 INFO task2_vlm.trainer: Stage 2 [950/1500] update 3200 loss 0.2695 lr 3.92e-05 mem 4826MB
+2026-11-04 03:43:38,021 INFO task2_vlm.trainer: Stage 2 [1000/1500] update 3250 loss 0.8463 lr 3.47e-05 mem 4826MB
+2026-11-04 03:43:38,152 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_3250.pt
+2026-11-04 03:44:09,716 INFO task2_vlm.trainer: Stage 2 [1050/1500] update 3300 loss 1.5083 lr 3.04e-05 mem 4826MB
+2026-11-04 03:44:41,361 INFO task2_vlm.trainer: Stage 2 [1100/1500] update 3350 loss 0.0973 lr 2.64e-05 mem 4908MB
+2026-11-04 03:45:12,801 INFO task2_vlm.trainer: Stage 2 [1150/1500] update 3400 loss 0.1274 lr 2.27e-05 mem 4908MB
+2026-11-04 03:45:44,336 INFO task2_vlm.trainer: Stage 2 [1200/1500] update 3450 loss 1.1770 lr 1.95e-05 mem 4908MB
+2026-11-04 03:46:15,753 INFO task2_vlm.trainer: Stage 2 [1250/1500] update 3500 loss 0.1479 lr 1.67e-05 mem 4908MB
+2026-11-04 03:46:15,883 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_3500.pt
+2026-11-04 03:46:15,883 INFO task2_vlm.trainer: Dev evaluation at update 3500 (stage 2)
+2026-11-04 03:46:23,538 INFO task2_vlm.trainer: [grounding] {'nll_correct': 0.9155247375295706, 'nll_swap': 3.4197564972952628, 'nll_no_image': 7.086199740568797, 'delta_nll': 2.504231759765692}
+2026-11-04 03:46:32,141 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 2.3339028692766988, 'nll_swap': 3.0013933799673396, 'nll_no_image': 10.686144948005676, 'delta_nll': 0.6674905106906408}
+2026-11-04 03:47:03,402 INFO task2_vlm.trainer: Stage 2 [1300/1500] update 3550 loss 1.0249 lr 1.43e-05 mem 4908MB
+2026-11-04 03:47:34,763 INFO task2_vlm.trainer: Stage 2 [1350/1500] update 3600 loss 0.5199 lr 1.24e-05 mem 4908MB
+2026-11-04 03:48:06,090 INFO task2_vlm.trainer: Stage 2 [1400/1500] update 3650 loss 0.8404 lr 1.11e-05 mem 4908MB
+2026-11-04 03:48:37,850 INFO task2_vlm.trainer: Stage 2 [1450/1500] update 3700 loss 0.7659 lr 1.03e-05 mem 4908MB
+2026-11-04 03:49:09,614 INFO task2_vlm.trainer: Stage 2 [1500/1500] update 3750 loss 0.5777 lr 1.00e-05 mem 4908MB
+2026-11-04 03:49:09,749 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_3750.pt
+2026-11-04 03:49:09,749 INFO task2_vlm.trainer: --- Completed stage 2 at update 3750 ---
+2026-11-04 03:49:09,756 INFO task2_vlm.models: Saved connector weights to outputs/task2/connector_stage_2.pt
+2026-11-04 03:49:09,789 INFO task2_vlm.models: Saved LoRA adapters to outputs/task2/lora_adapters_stage_2.pt
+2026-11-04 03:49:09,789 INFO task2_vlm.trainer: Dev evaluation at update 3750 (stage 2)
+2026-11-04 03:49:17,614 INFO task2_vlm.trainer: [grounding] {'nll_correct': 0.9813131407657542, 'nll_swap': 3.6548157144182674, 'nll_no_image': 7.194014569123586, 'delta_nll': 2.673502573652513}
+2026-11-04 03:49:26,492 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 2.3500247587755894, 'nll_swap': 3.087837805338495, 'nll_no_image': 10.772130440920591, 'delta_nll': 0.7378130465629056}
+2026-11-04 03:49:26,492 INFO task2_vlm.models: LoRA already enabled.
+2026-11-04 03:49:26,496 INFO task2_vlm.trainer: Stage 3: 2 param groups, peak LRs [5e-05, 1e-05], trainable params 6,424,576
+2026-11-04 03:49:26,496 INFO task2_vlm.trainer: === Stage 3: 750 updates (starting at step 0) ===
+2026-11-04 03:49:57,976 INFO task2_vlm.trainer: Stage 3 [50/750] update 3800 loss 1.4196 lr 5.00e-05 mem 4624MB
+2026-11-04 03:50:29,497 INFO task2_vlm.trainer: Stage 3 [100/750] update 3850 loss 0.8437 lr 4.91e-05 mem 4624MB
+2026-11-04 03:51:00,889 INFO task2_vlm.trainer: Stage 3 [150/750] update 3900 loss 0.8348 lr 4.73e-05 mem 4624MB
+2026-11-04 03:51:32,448 INFO task2_vlm.trainer: Stage 3 [200/750] update 3950 loss 1.0066 lr 4.44e-05 mem 4663MB
+2026-11-04 03:52:03,736 INFO task2_vlm.trainer: Stage 3 [250/750] update 4000 loss 0.6643 lr 4.08e-05 mem 4663MB
+2026-11-04 03:52:03,870 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_4000.pt
+2026-11-04 03:52:03,870 INFO task2_vlm.trainer: Dev evaluation at update 4000 (stage 3)
+2026-11-04 03:52:11,408 INFO task2_vlm.trainer: [grounding] {'nll_correct': 0.8972864233752867, 'nll_swap': 2.622546846047044, 'nll_no_image': 5.776866212487221, 'delta_nll': 1.7252604226717572}
+2026-11-04 03:52:19,894 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 1.3096207498165313, 'nll_swap': 2.064059241034556, 'nll_no_image': 9.383398413658142, 'delta_nll': 0.7544384912180249}
+2026-11-04 03:52:51,330 INFO task2_vlm.trainer: Stage 3 [300/750] update 4050 loss 1.3409 lr 3.65e-05 mem 4663MB
+2026-11-04 03:53:22,970 INFO task2_vlm.trainer: Stage 3 [350/750] update 4100 loss 1.0200 lr 3.18e-05 mem 4797MB
+2026-11-04 03:53:54,612 INFO task2_vlm.trainer: Stage 3 [400/750] update 4150 loss 0.5870 lr 2.69e-05 mem 4797MB
+2026-11-04 03:54:26,187 INFO task2_vlm.trainer: Stage 3 [450/750] update 4200 loss 1.2995 lr 2.20e-05 mem 4797MB
+2026-11-04 03:54:57,712 INFO task2_vlm.trainer: Stage 3 [500/750] update 4250 loss 0.4705 lr 1.73e-05 mem 4797MB
+2026-11-04 03:54:57,849 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_4250.pt
+2026-11-04 03:55:29,371 INFO task2_vlm.trainer: Stage 3 [550/750] update 4300 loss 1.1677 lr 1.32e-05 mem 4797MB
+2026-11-04 03:56:00,703 INFO task2_vlm.trainer: Stage 3 [600/750] update 4350 loss 0.5745 lr 9.74e-06 mem 4797MB
+2026-11-04 03:56:31,905 INFO task2_vlm.trainer: Stage 3 [650/750] update 4400 loss 1.2738 lr 7.15e-06 mem 4797MB
+2026-11-04 03:57:03,437 INFO task2_vlm.trainer: Stage 3 [700/750] update 4450 loss 1.1030 lr 5.54e-06 mem 4797MB
+2026-11-04 03:57:34,785 INFO task2_vlm.trainer: Stage 3 [750/750] update 4500 loss 0.5301 lr 5.00e-06 mem 5095MB
+2026-11-04 03:57:34,920 INFO task2_vlm.trainer: Saved resumable checkpoint outputs/task2/checkpoint_step_4500.pt
+2026-11-04 03:57:34,921 INFO task2_vlm.trainer: --- Completed stage 3 at update 4500 ---
+2026-11-04 03:57:34,928 INFO task2_vlm.models: Saved connector weights to outputs/task2/connector_stage_3.pt
+2026-11-04 03:57:34,960 INFO task2_vlm.models: Saved LoRA adapters to outputs/task2/lora_adapters_stage_3.pt
+2026-11-04 03:57:34,960 INFO task2_vlm.trainer: Dev evaluation at update 4500 (stage 3)
+2026-11-04 03:57:42,746 INFO task2_vlm.trainer: [grounding] {'nll_correct': 0.961206738985311, 'nll_swap': 3.0858812051398368, 'nll_no_image': 5.225784589846929, 'delta_nll': 2.124674466154526}
+2026-11-04 03:57:51,658 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 1.3098692288876919, 'nll_swap': 2.3072796871711034, 'nll_no_image': 9.066601246595383, 'delta_nll': 0.9974104582834116}

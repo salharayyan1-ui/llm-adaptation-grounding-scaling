@@ -1,0 +1,24 @@
+[32mActivated conda/uv virtual environment at [36m/venv/main[0m
+2026-11-04 04:58:45,330 INFO task1_llm_ft.evaluate: >>> Qualitative generation: baseline
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-04 04:58:47,097 INFO task1_llm_ft.evaluate: Loaded 24 qualitative prompts from ./configs/first_plot_questions.yaml
+2026-11-04 04:59:12,682 INFO task1_llm_ft.evaluate: >>> Qualitative generation: full_ft_midpoint
+2026-11-04 04:59:15,650 INFO task1_llm_ft.evaluate: Loaded 24 qualitative prompts from ./configs/first_plot_questions.yaml
+2026-11-04 05:00:09,836 INFO task1_llm_ft.evaluate: >>> Qualitative generation: full_ft_final
+2026-11-04 05:00:12,557 INFO task1_llm_ft.evaluate: Loaded 24 qualitative prompts from ./configs/first_plot_questions.yaml
+2026-11-04 05:00:52,930 INFO task1_llm_ft.evaluate: >>> Qualitative generation: full_ft_l2_sp_final
+2026-11-04 05:00:55,564 INFO task1_llm_ft.evaluate: Loaded 24 qualitative prompts from ./configs/first_plot_questions.yaml
+2026-11-04 05:01:34,104 INFO task1_llm_ft.evaluate: >>> Qualitative generation: lora_4_final
+2026-11-04 05:01:35,151 INFO task1_llm_ft.models: Applied LoRA (r=4, alpha=8.0) to 196 modules
+2026-11-04 05:01:35,392 INFO task1_llm_ft.models: Merged 196 adapters into base model weights
+2026-11-04 05:01:35,406 INFO task1_llm_ft.evaluate: Loaded 24 qualitative prompts from ./configs/first_plot_questions.yaml
+2026-11-04 05:02:15,250 INFO task1_llm_ft.evaluate: >>> Qualitative generation: lora_16_final
+2026-11-04 05:02:16,437 INFO task1_llm_ft.models: Applied LoRA (r=16, alpha=32.0) to 196 modules
+2026-11-04 05:02:16,746 INFO task1_llm_ft.models: Merged 196 adapters into base model weights
+2026-11-04 05:02:16,761 INFO task1_llm_ft.evaluate: Loaded 24 qualitative prompts from ./configs/first_plot_questions.yaml
+2026-11-04 05:02:54,825 INFO task1_llm_ft.evaluate: >>> Qualitative generation: oplora_16_final
+2026-11-04 05:02:55,931 INFO task1_llm_ft.models: Applied LoRA (r=16, alpha=32.0) to 196 modules
+2026-11-04 05:02:56,178 INFO task1_llm_ft.models: Merged 196 adapters into base model weights
+2026-11-04 05:02:56,193 INFO task1_llm_ft.evaluate: Loaded 24 qualitative prompts from ./configs/first_plot_questions.yaml
+{'complete': True, 'all_responses_count': 168, 'annotation_subset_count': 42, 'output_dir': './results/task1/qualitative'}
+{'complete': True, 'all_responses_count': 168, 'annotation_subset_count': 42, 'output_dir': './results/task1/qualitative'}

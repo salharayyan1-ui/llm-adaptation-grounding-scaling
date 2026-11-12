@@ -1,0 +1,66 @@
+
+>>> Training variant: lora_16
+2026-11-03 16:36:32,915 INFO task1_llm_ft.trainer: Loading MetaMathQA...
+2026-11-03 16:36:35,832 INFO task1_llm_ft.dataset: Loaded 1319 GSM8K test questions from HuggingFace datasets
+2026-11-03 16:37:14,987 INFO task1_llm_ft.dataset: Filtered MetaMathQA: collected 40000 examples. Filtered empty: 0, contamination: 0, exceeding 2048 tokens: 2.
+2026-11-03 16:37:15,140 INFO task1_llm_ft.trainer: Loading Qwen/Qwen3-0.6B as torch.float16 for variant lora_16
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-03 16:37:17,036 INFO task1_llm_ft.models: Applied LoRA (r=16, alpha=32.0) to 196 modules
+2026-11-03 16:37:17,060 INFO task1_llm_ft.trainer: Model parameters: {'total': 606142464, 'trainable': 10092544, 'frozen': 596049920}
+2026-11-03 16:37:17,065 INFO task1_llm_ft.trainer: Starting run: method=lora_16, updates=1250, microbatch=2, accum=16, lr=0.0002, lambda=0.0, start_update=0
+2026-11-03 16:37:22,855 INFO task1_llm_ft.trainer: Update 1/1250 | ex 32 | sft 1.0286 | lr 0.00e+00 | gnorm 4.15 | mem 2526MB
+2026-11-03 16:39:29,178 INFO task1_llm_ft.trainer: Update 25/1250 | ex 800 | sft 0.2770 | lr 1.26e-04 | gnorm 0.41 | mem 3833MB
+2026-11-03 16:41:41,769 INFO task1_llm_ft.trainer: Update 50/1250 | ex 1600 | sft 0.2530 | lr 2.00e-04 | gnorm 0.31 | mem 4928MB
+2026-11-03 16:43:52,912 INFO task1_llm_ft.trainer: Update 75/1250 | ex 2400 | sft 0.2518 | lr 2.00e-04 | gnorm 0.32 | mem 4928MB
+2026-11-03 16:46:02,545 INFO task1_llm_ft.trainer: Update 100/1250 | ex 3200 | sft 0.2576 | lr 1.99e-04 | gnorm 0.30 | mem 4928MB
+2026-11-03 16:48:13,712 INFO task1_llm_ft.trainer: Update 125/1250 | ex 4000 | sft 0.2768 | lr 1.98e-04 | gnorm 0.31 | mem 4928MB
+2026-11-03 16:50:25,210 INFO task1_llm_ft.trainer: Update 150/1250 | ex 4800 | sft 0.2418 | lr 1.96e-04 | gnorm 0.28 | mem 4928MB
+2026-11-03 16:52:38,211 INFO task1_llm_ft.trainer: Update 175/1250 | ex 5600 | sft 0.2170 | lr 1.94e-04 | gnorm 0.30 | mem 4928MB
+2026-11-03 16:54:49,050 INFO task1_llm_ft.trainer: Update 200/1250 | ex 6400 | sft 0.2069 | lr 1.91e-04 | gnorm 0.28 | mem 4928MB
+2026-11-03 16:56:59,355 INFO task1_llm_ft.trainer: Update 225/1250 | ex 7200 | sft 0.2540 | lr 1.89e-04 | gnorm 0.30 | mem 4928MB
+2026-11-03 16:59:11,256 INFO task1_llm_ft.trainer: Update 250/1250 | ex 8000 | sft 0.2495 | lr 1.85e-04 | gnorm 0.34 | mem 4928MB
+2026-11-03 17:01:24,496 INFO task1_llm_ft.trainer: Update 275/1250 | ex 8800 | sft 0.2407 | lr 1.82e-04 | gnorm 0.25 | mem 4928MB
+2026-11-03 17:03:37,814 INFO task1_llm_ft.trainer: Update 300/1250 | ex 9600 | sft 0.2122 | lr 1.78e-04 | gnorm 0.28 | mem 4928MB
+2026-11-03 17:04:40,407 INFO task1_llm_ft.trainer: Saved recovery checkpoint at update 312 to ./outputs/task1/lora_16/checkpoint_step_312: {'update': 312, 'examples_seen': 9984, 'weights_file': 'adapter_state.pt', 'weights_mb': 38.62060832977295, 'optimizer_mb': 77.3648042678833, 'total_mb': 115.98541259765625, 'save_sec': 0.19966146117076278}
+2026-11-03 17:05:48,374 INFO task1_llm_ft.trainer: Update 325/1250 | ex 10400 | sft 0.2430 | lr 1.74e-04 | gnorm 0.30 | mem 4928MB
+2026-11-03 17:07:58,372 INFO task1_llm_ft.trainer: Update 350/1250 | ex 11200 | sft 0.2301 | lr 1.69e-04 | gnorm 0.27 | mem 4928MB
+2026-11-03 17:10:09,542 INFO task1_llm_ft.trainer: Update 375/1250 | ex 12000 | sft 0.1908 | lr 1.64e-04 | gnorm 0.26 | mem 4928MB
+2026-11-03 17:12:19,051 INFO task1_llm_ft.trainer: Update 400/1250 | ex 12800 | sft 0.2124 | lr 1.59e-04 | gnorm 0.28 | mem 4928MB
+2026-11-03 17:14:28,981 INFO task1_llm_ft.trainer: Update 425/1250 | ex 13600 | sft 0.2313 | lr 1.54e-04 | gnorm 0.29 | mem 4928MB
+2026-11-03 17:16:42,095 INFO task1_llm_ft.trainer: Update 450/1250 | ex 14400 | sft 0.2297 | lr 1.48e-04 | gnorm 0.28 | mem 4928MB
+2026-11-03 17:18:54,613 INFO task1_llm_ft.trainer: Update 475/1250 | ex 15200 | sft 0.1818 | lr 1.43e-04 | gnorm 0.23 | mem 4928MB
+2026-11-03 17:21:08,694 INFO task1_llm_ft.trainer: Update 500/1250 | ex 16000 | sft 0.2123 | lr 1.37e-04 | gnorm 0.26 | mem 4928MB
+2026-11-03 17:23:20,863 INFO task1_llm_ft.trainer: Update 525/1250 | ex 16800 | sft 0.2014 | lr 1.31e-04 | gnorm 0.25 | mem 4928MB
+2026-11-03 17:25:30,092 INFO task1_llm_ft.trainer: Update 550/1250 | ex 17600 | sft 0.2047 | lr 1.24e-04 | gnorm 0.27 | mem 4928MB
+2026-11-03 17:27:38,441 INFO task1_llm_ft.trainer: Update 575/1250 | ex 18400 | sft 0.2060 | lr 1.18e-04 | gnorm 0.29 | mem 4928MB
+2026-11-03 17:29:48,124 INFO task1_llm_ft.trainer: Update 600/1250 | ex 19200 | sft 0.2011 | lr 1.12e-04 | gnorm 0.26 | mem 4928MB
+2026-11-03 17:32:01,124 INFO task1_llm_ft.trainer: Update 625/1250 | ex 20000 | sft 0.2035 | lr 1.05e-04 | gnorm 0.23 | mem 4928MB
+2026-11-03 17:32:01,318 INFO task1_llm_ft.trainer: Saved recovery checkpoint at update 625 to ./outputs/task1/lora_16/checkpoint_step_625: {'update': 625, 'examples_seen': 20000, 'weights_file': 'adapter_state.pt', 'weights_mb': 38.62060832977295, 'optimizer_mb': 77.39465045928955, 'total_mb': 116.0152587890625, 'save_sec': 0.19382955878973007}
+2026-11-03 17:34:14,269 INFO task1_llm_ft.trainer: Update 650/1250 | ex 20800 | sft 0.1806 | lr 9.87e-05 | gnorm 0.26 | mem 4928MB
+2026-11-03 17:36:27,119 INFO task1_llm_ft.trainer: Update 675/1250 | ex 21600 | sft 0.2167 | lr 9.22e-05 | gnorm 0.27 | mem 4928MB
+2026-11-03 17:38:36,506 INFO task1_llm_ft.trainer: Update 700/1250 | ex 22400 | sft 0.2133 | lr 8.58e-05 | gnorm 0.26 | mem 4928MB
+2026-11-03 17:40:45,264 INFO task1_llm_ft.trainer: Update 725/1250 | ex 23200 | sft 0.1947 | lr 7.94e-05 | gnorm 0.26 | mem 4928MB
+2026-11-03 17:42:55,020 INFO task1_llm_ft.trainer: Update 750/1250 | ex 24000 | sft 0.1582 | lr 7.31e-05 | gnorm 0.24 | mem 4928MB
+2026-11-03 17:45:04,689 INFO task1_llm_ft.trainer: Update 775/1250 | ex 24800 | sft 0.1838 | lr 6.69e-05 | gnorm 0.24 | mem 4928MB
+2026-11-03 17:47:17,397 INFO task1_llm_ft.trainer: Update 800/1250 | ex 25600 | sft 0.1816 | lr 6.09e-05 | gnorm 0.25 | mem 4928MB
+2026-11-03 17:49:29,589 INFO task1_llm_ft.trainer: Update 825/1250 | ex 26400 | sft 0.2275 | lr 5.50e-05 | gnorm 0.29 | mem 4928MB
+2026-11-03 17:51:38,800 INFO task1_llm_ft.trainer: Update 850/1250 | ex 27200 | sft 0.2040 | lr 4.93e-05 | gnorm 0.25 | mem 4928MB
+2026-11-03 17:53:46,903 INFO task1_llm_ft.trainer: Update 875/1250 | ex 28000 | sft 0.1904 | lr 4.39e-05 | gnorm 0.26 | mem 4928MB
+2026-11-03 17:55:55,323 INFO task1_llm_ft.trainer: Update 900/1250 | ex 28800 | sft 0.1823 | lr 3.86e-05 | gnorm 0.26 | mem 4928MB
+2026-11-03 17:58:04,196 INFO task1_llm_ft.trainer: Update 925/1250 | ex 29600 | sft 0.1948 | lr 3.36e-05 | gnorm 0.25 | mem 4928MB
+2026-11-03 17:59:06,112 INFO task1_llm_ft.trainer: Saved recovery checkpoint at update 937 to ./outputs/task1/lora_16/checkpoint_step_937: {'update': 937, 'examples_seen': 29984, 'weights_file': 'adapter_state.pt', 'weights_mb': 38.62060832977295, 'optimizer_mb': 77.42443561553955, 'total_mb': 116.0450439453125, 'save_sec': 0.19597155088558793}
+2026-11-03 18:00:14,239 INFO task1_llm_ft.trainer: Update 950/1250 | ex 30400 | sft 0.2053 | lr 2.89e-05 | gnorm 0.29 | mem 4928MB
+2026-11-03 18:02:26,729 INFO task1_llm_ft.trainer: Update 975/1250 | ex 31200 | sft 0.2184 | lr 2.45e-05 | gnorm 0.28 | mem 4928MB
+2026-11-03 18:04:38,929 INFO task1_llm_ft.trainer: Update 1000/1250 | ex 32000 | sft 0.2211 | lr 2.04e-05 | gnorm 0.26 | mem 4928MB
+2026-11-03 18:06:49,458 INFO task1_llm_ft.trainer: Update 1025/1250 | ex 32800 | sft 0.1923 | lr 1.67e-05 | gnorm 0.26 | mem 4928MB
+2026-11-03 18:08:58,189 INFO task1_llm_ft.trainer: Update 1050/1250 | ex 33600 | sft 0.2305 | lr 1.33e-05 | gnorm 0.28 | mem 4928MB
+2026-11-03 18:11:09,692 INFO task1_llm_ft.trainer: Update 1075/1250 | ex 34400 | sft 0.1782 | lr 1.02e-05 | gnorm 0.27 | mem 4928MB
+2026-11-03 18:13:20,039 INFO task1_llm_ft.trainer: Update 1100/1250 | ex 35200 | sft 0.2133 | lr 7.56e-06 | gnorm 0.29 | mem 4928MB
+2026-11-03 18:15:28,599 INFO task1_llm_ft.trainer: Update 1125/1250 | ex 36000 | sft 0.2108 | lr 5.29e-06 | gnorm 0.32 | mem 4928MB
+2026-11-03 18:17:39,509 INFO task1_llm_ft.trainer: Update 1150/1250 | ex 36800 | sft 0.1699 | lr 3.41e-06 | gnorm 0.25 | mem 4928MB
+2026-11-03 18:19:51,898 INFO task1_llm_ft.trainer: Update 1175/1250 | ex 37600 | sft 0.1821 | lr 1.93e-06 | gnorm 0.25 | mem 4928MB
+2026-11-03 18:22:02,651 INFO task1_llm_ft.trainer: Update 1200/1250 | ex 38400 | sft 0.1784 | lr 8.73e-07 | gnorm 0.26 | mem 4928MB
+2026-11-03 18:24:10,593 INFO task1_llm_ft.trainer: Update 1225/1250 | ex 39200 | sft 0.2393 | lr 2.27e-07 | gnorm 0.28 | mem 4928MB
+2026-11-03 18:26:19,591 INFO task1_llm_ft.trainer: Update 1250/1250 | ex 40000 | sft 0.1790 | lr 3.36e-10 | gnorm 0.25 | mem 4928MB
+2026-11-03 18:26:19,800 INFO task1_llm_ft.trainer: Saved recovery checkpoint at update 1250 to ./outputs/task1/lora_16/checkpoint_step_1250: {'update': 1250, 'examples_seen': 40000, 'weights_file': 'adapter_state.pt', 'weights_mb': 38.62060832977295, 'optimizer_mb': 77.4542818069458, 'total_mb': 116.07489013671875, 'save_sec': 0.20957504911348224}
+2026-11-03 18:26:19,821 INFO task1_llm_ft.trainer: Saved training history to ./results/task1/lora_16/training_history.json

@@ -1,0 +1,15 @@
+
+>>> Training variant: full_ft_l2_sp
+2026-11-03 16:35:30,050 INFO task1_llm_ft.trainer: Loading MetaMathQA...
+Generating train split:   0%|          | 0/395000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 395000/395000 [00:05<00:00, 75086.13 examples/s]Generating train split: 100%|██████████| 395000/395000 [00:05<00:00, 74590.56 examples/s]
+2026-11-03 16:35:42,861 INFO task1_llm_ft.dataset: Loaded 1319 GSM8K test questions from HuggingFace datasets
+2026-11-03 16:35:43,237 INFO task1_llm_ft.dataset: Filtered MetaMathQA: collected 400 examples. Filtered empty: 0, contamination: 0, exceeding 2048 tokens: 0.
+2026-11-03 16:35:43,239 INFO task1_llm_ft.trainer: Loading Qwen/Qwen3-0.6B as torch.float32 for variant full_ft_l2_sp
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-03 16:35:45,414 INFO task1_llm_ft.l2_sp: L2-SP initialized: 310 unique parameter tensors (596,049,920 parameters). Reference storage: 2273.75 MB. Capture time: 21.79 ms. Lambda: 0.001
+2026-11-03 16:35:45,415 INFO task1_llm_ft.trainer: Model parameters: {'total': 596049920, 'trainable': 596049920, 'frozen': 0}
+2026-11-03 16:35:45,418 INFO task1_llm_ft.trainer: Starting run: method=l2_sp, updates=6, microbatch=2, accum=16, lr=2e-05, lambda=0.001, start_update=0
+2026-11-03 16:35:49,811 INFO task1_llm_ft.trainer: Update 1/6 | ex 32 | sft 1.0285 | lr 0.00e+00 | gnorm 33.28 | mem 13658MB | Omega 0.000 | total 1.0285
+2026-11-03 16:36:04,527 INFO task1_llm_ft.trainer: Saved recovery checkpoint at update 3 to ./outputs/task1_preflight/full_ft_l2_sp/checkpoint_step_3: {'update': 3, 'examples_seen': 96, 'weights_file': 'model_state.pt', 'weights_mb': 2273.8707914352417, 'optimizer_mb': 4547.773352622986, 'total_mb': 6821.6441440582275, 'save_sec': 7.140191400889307}
+2026-11-03 16:36:23,133 INFO task1_llm_ft.trainer: Saved recovery checkpoint at update 6 to ./outputs/task1_preflight/full_ft_l2_sp/checkpoint_step_6: {'update': 6, 'examples_seen': 192, 'weights_file': 'model_state.pt', 'weights_mb': 2273.8707914352417, 'optimizer_mb': 4547.773718833923, 'total_mb': 6821.644510269165, 'save_sec': 7.244287515990436}
+2026-11-03 16:36:23,134 INFO task1_llm_ft.trainer: Saved training history to ./results/task1_preflight/full_ft_l2_sp/training_history.json

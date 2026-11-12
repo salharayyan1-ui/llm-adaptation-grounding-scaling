@@ -1,0 +1,31 @@
+[32mActivated conda/uv virtual environment at [36m/venv/main[0m
+== disk / gpu ==
+overlay          80G  107M   80G   1% /
+NVIDIA GeForce RTX 3090, 24576 MiB
+== dependencies ==
+ + word2number==1.1
+ + xxhash==4.0.2
+ + yarl==1.25.1
+torch 2.11.0+cu128 | cuda True | transformers 4.57.6 | peft 0.21.2 | lm_eval 0.4.13 | datasets 5.0.1
+== GPU smoke test (tiny random models, ~3 min) ==
+22/22 checks passed
+== Task 2 annotations + pairing ==
+Downloading COCO annotations (~250 MB)...
+COCO annotations ready.
+Downloading v2_Questions_Train_mscoco.zip...
+Downloading v2_Annotations_Train_mscoco.zip...
+Downloading v2_Questions_Val_mscoco.zip...
+Downloading v2_Annotations_Val_mscoco.zip...
+Downloading v2_Complementary_Pairs_Train_mscoco.zip...
+Downloading v2_Complementary_Pairs_Val_mscoco.zip...
+VQAv2 files ready.
+-rw-rw-r-- 1 root root 8592510 Nov  3 15:48 outputs/task2/datasets.json
+-rw-rw-r-- 1 root root 1251196 Nov  3 15:48 results/task2/split_ids.json
+== COCO images (background, throttled host: ~3 h) ==
+== queue ==
+queue started (tmux: night)
+imgs: 1 windows (created Tue Nov  3 15:48:32 2026)
+night: 1 windows (created Tue Nov  3 15:48:32 2026)
+status file: /workspace/logs/queue_status.txt
+[2026-11-03 15:48:32] =============== queue start (free disk 78G) ===============
+[2026-11-03 15:48:32] START eval_baseline (attempt 1, free disk 78G)

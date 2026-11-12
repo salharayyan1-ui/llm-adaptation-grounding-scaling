@@ -1,0 +1,14 @@
+2026-11-04 03:57:58,501 INFO task2_vlm.models: Loading LLM Qwen/Qwen3-0.6B...
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-04 03:58:01,225 INFO task2_vlm.models: Loaded connector weights from ./outputs/task2/connector_stage_3.pt
+2026-11-04 03:58:01,366 INFO task2_vlm.models: LoRA enabled: 6,424,576 trainable / 602,474,496 total parameters.
+2026-11-04 03:58:01,401 INFO task2_vlm.models: Loaded LoRA adapters from ./outputs/task2/lora_adapters_stage_3.pt (224 tensors)
+2026-11-04 03:58:01,471 INFO task2_vlm.evaluate: Evaluating grounding_suite under condition: correct
+2026-11-04 03:58:09,520 INFO task2_vlm.evaluate: Evaluating grounding_suite under condition: swap
+2026-11-04 03:58:17,220 INFO task2_vlm.evaluate: Evaluating grounding_suite under condition: mismatched
+2026-11-04 03:58:24,909 INFO task2_vlm.evaluate: Evaluating grounding_suite under condition: no_image
+2026-11-04 03:58:41,660 INFO task2_vlm.evaluate: Evaluating vqav2_suite under condition: correct
+2026-11-04 03:58:54,192 INFO task2_vlm.evaluate: Evaluating vqav2_suite under condition: swap
+2026-11-04 03:59:06,960 INFO task2_vlm.evaluate: Evaluating vqav2_suite under condition: mismatched
+2026-11-04 03:59:18,951 INFO task2_vlm.evaluate: Evaluating vqav2_suite under condition: no_image
+2026-11-04 03:59:46,798 INFO task2_vlm.evaluate: Evaluation complete; report in results/task2/final_evaluation_report.json

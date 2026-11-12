@@ -1,0 +1,22 @@
+2026-11-04 04:12:29,990 INFO task1_llm_ft.evaluate: >>> Qualitative generation: baseline
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-04 04:12:31,783 INFO task1_llm_ft.evaluate: Loaded 24 qualitative prompts from ./configs/first_plot_questions.yaml
+2026-11-04 04:13:03,650 INFO task1_llm_ft.evaluate: >>> Qualitative generation: full_ft_midpoint
+2026-11-04 04:13:06,995 INFO task1_llm_ft.evaluate: Loaded 24 qualitative prompts from ./configs/first_plot_questions.yaml
+2026-11-04 04:13:59,561 INFO task1_llm_ft.evaluate: >>> Qualitative generation: full_ft_final
+2026-11-04 04:14:02,455 INFO task1_llm_ft.evaluate: Loaded 24 qualitative prompts from ./configs/first_plot_questions.yaml
+2026-11-04 04:14:46,127 INFO task1_llm_ft.evaluate: >>> Qualitative generation: full_ft_l2_sp_final
+2026-11-04 04:14:49,050 INFO task1_llm_ft.evaluate: Loaded 24 qualitative prompts from ./configs/first_plot_questions.yaml
+2026-11-04 04:15:31,405 INFO task1_llm_ft.evaluate: >>> Qualitative generation: lora_4_final
+2026-11-04 04:15:32,451 INFO task1_llm_ft.models: Applied LoRA (r=4, alpha=8.0) to 196 modules
+2026-11-04 04:15:32,698 INFO task1_llm_ft.models: Merged 196 adapters into base model weights
+2026-11-04 04:15:32,710 INFO task1_llm_ft.evaluate: Loaded 24 qualitative prompts from ./configs/first_plot_questions.yaml
+2026-11-04 04:16:17,344 INFO task1_llm_ft.evaluate: >>> Qualitative generation: lora_16_final
+2026-11-04 04:16:18,536 INFO task1_llm_ft.models: Applied LoRA (r=16, alpha=32.0) to 196 modules
+2026-11-04 04:16:18,790 INFO task1_llm_ft.models: Merged 196 adapters into base model weights
+2026-11-04 04:16:18,803 INFO task1_llm_ft.evaluate: Loaded 24 qualitative prompts from ./configs/first_plot_questions.yaml
+2026-11-04 04:17:00,739 INFO task1_llm_ft.evaluate: >>> Qualitative generation: oplora_16_final
+2026-11-04 04:17:01,941 INFO task1_llm_ft.models: Applied LoRA (r=16, alpha=32.0) to 196 modules
+2026-11-04 04:17:02,234 INFO task1_llm_ft.models: Merged 196 adapters into base model weights
+2026-11-04 04:17:02,247 INFO task1_llm_ft.evaluate: Loaded 24 qualitative prompts from ./configs/first_plot_questions.yaml
+{'complete': True, 'all_responses_count': 168, 'annotation_subset_count': 42, 'output_dir': './results/task1/qualitative'}

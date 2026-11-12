@@ -1,0 +1,67 @@
+
+>>> Training variant: full_ft
+2026-11-03 23:48:53,258 INFO task1_llm_ft.trainer: Loading MetaMathQA...
+2026-11-03 23:48:56,055 INFO task1_llm_ft.dataset: Loaded 1319 GSM8K test questions from HuggingFace datasets
+2026-11-03 23:49:35,133 INFO task1_llm_ft.dataset: Filtered MetaMathQA: collected 40000 examples. Filtered empty: 0, contamination: 0, exceeding 2048 tokens: 2.
+2026-11-03 23:49:35,273 INFO task1_llm_ft.trainer: Loading Qwen/Qwen3-0.6B as torch.float32 for variant full_ft
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-03 23:49:38,732 INFO task1_llm_ft.trainer: Model parameters: {'total': 596049920, 'trainable': 596049920, 'frozen': 0}
+2026-11-03 23:49:38,736 INFO task1_llm_ft.trainer: Starting run: method=full_ft, updates=1250, microbatch=2, accum=16, lr=2e-05, lambda=0.0, start_update=0
+2026-11-03 23:49:42,948 INFO task1_llm_ft.trainer: Update 1/1250 | ex 32 | sft 1.0285 | lr 0.00e+00 | gnorm 33.28 | mem 11384MB
+2026-11-03 23:51:10,518 INFO task1_llm_ft.trainer: Update 25/1250 | ex 800 | sft 0.2346 | lr 1.26e-05 | gnorm 2.43 | mem 12485MB
+2026-11-03 23:52:43,457 INFO task1_llm_ft.trainer: Update 50/1250 | ex 1600 | sft 0.2436 | lr 2.00e-05 | gnorm 1.99 | mem 13553MB
+2026-11-03 23:54:14,838 INFO task1_llm_ft.trainer: Update 75/1250 | ex 2400 | sft 0.2576 | lr 2.00e-05 | gnorm 2.32 | mem 13553MB
+2026-11-03 23:55:46,968 INFO task1_llm_ft.trainer: Update 100/1250 | ex 3200 | sft 0.2607 | lr 1.99e-05 | gnorm 2.02 | mem 13553MB
+2026-11-03 23:57:17,779 INFO task1_llm_ft.trainer: Update 125/1250 | ex 4000 | sft 0.2767 | lr 1.98e-05 | gnorm 2.09 | mem 13553MB
+2026-11-03 23:58:47,807 INFO task1_llm_ft.trainer: Update 150/1250 | ex 4800 | sft 0.2408 | lr 1.96e-05 | gnorm 1.85 | mem 13553MB
+2026-11-04 00:00:19,330 INFO task1_llm_ft.trainer: Update 175/1250 | ex 5600 | sft 0.2182 | lr 1.94e-05 | gnorm 1.88 | mem 13553MB
+2026-11-04 00:01:49,813 INFO task1_llm_ft.trainer: Update 200/1250 | ex 6400 | sft 0.2186 | lr 1.91e-05 | gnorm 1.95 | mem 13553MB
+2026-11-04 00:03:20,949 INFO task1_llm_ft.trainer: Update 225/1250 | ex 7200 | sft 0.2568 | lr 1.89e-05 | gnorm 1.97 | mem 13553MB
+2026-11-04 00:04:51,248 INFO task1_llm_ft.trainer: Update 250/1250 | ex 8000 | sft 0.2563 | lr 1.85e-05 | gnorm 2.06 | mem 13553MB
+2026-11-04 00:06:22,741 INFO task1_llm_ft.trainer: Update 275/1250 | ex 8800 | sft 0.2466 | lr 1.82e-05 | gnorm 2.03 | mem 13553MB
+2026-11-04 00:07:53,851 INFO task1_llm_ft.trainer: Update 300/1250 | ex 9600 | sft 0.2260 | lr 1.78e-05 | gnorm 2.07 | mem 13553MB
+2026-11-04 00:08:44,902 INFO task1_llm_ft.trainer: Saved recovery checkpoint at update 312 to ./outputs/task1/full_ft/checkpoint_step_312: {'update': 312, 'examples_seen': 9984, 'weights_file': 'model_state.pt', 'weights_mb': 2273.8707914352417, 'optimizer_mb': 4547.802405357361, 'total_mb': 6821.6731967926025, 'save_sec': 7.255030618049204}
+2026-11-04 00:09:32,075 INFO task1_llm_ft.trainer: Update 325/1250 | ex 10400 | sft 0.2526 | lr 1.74e-05 | gnorm 2.03 | mem 13553MB
+2026-11-04 00:11:04,836 INFO task1_llm_ft.trainer: Update 350/1250 | ex 11200 | sft 0.2394 | lr 1.69e-05 | gnorm 1.84 | mem 13553MB
+2026-11-04 00:12:36,545 INFO task1_llm_ft.trainer: Update 375/1250 | ex 12000 | sft 0.2032 | lr 1.64e-05 | gnorm 1.66 | mem 13553MB
+2026-11-04 00:14:08,365 INFO task1_llm_ft.trainer: Update 400/1250 | ex 12800 | sft 0.2095 | lr 1.59e-05 | gnorm 2.01 | mem 13553MB
+2026-11-04 00:15:37,572 INFO task1_llm_ft.trainer: Update 425/1250 | ex 13600 | sft 0.2389 | lr 1.54e-05 | gnorm 2.03 | mem 13553MB
+2026-11-04 00:17:09,537 INFO task1_llm_ft.trainer: Update 450/1250 | ex 14400 | sft 0.2301 | lr 1.48e-05 | gnorm 1.81 | mem 13553MB
+2026-11-04 00:18:41,439 INFO task1_llm_ft.trainer: Update 475/1250 | ex 15200 | sft 0.1790 | lr 1.43e-05 | gnorm 1.51 | mem 13553MB
+2026-11-04 00:20:14,469 INFO task1_llm_ft.trainer: Update 500/1250 | ex 16000 | sft 0.2125 | lr 1.37e-05 | gnorm 1.75 | mem 13553MB
+2026-11-04 00:21:46,166 INFO task1_llm_ft.trainer: Update 525/1250 | ex 16800 | sft 0.2117 | lr 1.31e-05 | gnorm 1.60 | mem 13553MB
+2026-11-04 00:23:16,873 INFO task1_llm_ft.trainer: Update 550/1250 | ex 17600 | sft 0.2048 | lr 1.24e-05 | gnorm 1.75 | mem 13553MB
+2026-11-04 00:24:46,169 INFO task1_llm_ft.trainer: Update 575/1250 | ex 18400 | sft 0.2075 | lr 1.18e-05 | gnorm 1.77 | mem 13553MB
+2026-11-04 00:26:15,547 INFO task1_llm_ft.trainer: Update 600/1250 | ex 19200 | sft 0.1998 | lr 1.12e-05 | gnorm 1.88 | mem 13553MB
+2026-11-04 00:27:46,940 INFO task1_llm_ft.trainer: Update 625: ||theta - theta_0||_2 = 9.967513
+2026-11-04 00:27:46,940 INFO task1_llm_ft.trainer: Update 625/1250 | ex 20000 | sft 0.2063 | lr 1.05e-05 | gnorm 1.49 | mem 13553MB
+2026-11-04 00:27:54,259 INFO task1_llm_ft.trainer: Saved recovery checkpoint at update 625 to ./outputs/task1/full_ft/checkpoint_step_625: {'update': 625, 'examples_seen': 20000, 'weights_file': 'model_state.pt', 'weights_mb': 2273.8707914352417, 'optimizer_mb': 4547.832251548767, 'total_mb': 6821.703042984009, 'save_sec': 7.318803801201284}
+2026-11-04 00:29:25,895 INFO task1_llm_ft.trainer: Update 650/1250 | ex 20800 | sft 0.1719 | lr 9.87e-06 | gnorm 1.62 | mem 13553MB
+2026-11-04 00:30:57,573 INFO task1_llm_ft.trainer: Update 675/1250 | ex 21600 | sft 0.2121 | lr 9.22e-06 | gnorm 1.58 | mem 13553MB
+2026-11-04 00:32:30,768 INFO task1_llm_ft.trainer: Update 700/1250 | ex 22400 | sft 0.2021 | lr 8.58e-06 | gnorm 1.58 | mem 13553MB
+2026-11-04 00:34:02,264 INFO task1_llm_ft.trainer: Update 725/1250 | ex 23200 | sft 0.1841 | lr 7.94e-06 | gnorm 1.54 | mem 13553MB
+2026-11-04 00:35:34,877 INFO task1_llm_ft.trainer: Update 750/1250 | ex 24000 | sft 0.1546 | lr 7.31e-06 | gnorm 1.38 | mem 13553MB
+2026-11-04 00:37:05,756 INFO task1_llm_ft.trainer: Update 775/1250 | ex 24800 | sft 0.1772 | lr 6.69e-06 | gnorm 1.49 | mem 13553MB
+2026-11-04 00:38:37,182 INFO task1_llm_ft.trainer: Update 800/1250 | ex 25600 | sft 0.1720 | lr 6.09e-06 | gnorm 1.49 | mem 13553MB
+2026-11-04 00:40:07,832 INFO task1_llm_ft.trainer: Update 825/1250 | ex 26400 | sft 0.2275 | lr 5.50e-06 | gnorm 1.83 | mem 13553MB
+2026-11-04 00:41:37,246 INFO task1_llm_ft.trainer: Update 850/1250 | ex 27200 | sft 0.1958 | lr 4.93e-06 | gnorm 1.54 | mem 13553MB
+2026-11-04 00:43:06,071 INFO task1_llm_ft.trainer: Update 875/1250 | ex 28000 | sft 0.1813 | lr 4.39e-06 | gnorm 1.60 | mem 13553MB
+2026-11-04 00:44:35,248 INFO task1_llm_ft.trainer: Update 900/1250 | ex 28800 | sft 0.1682 | lr 3.86e-06 | gnorm 1.47 | mem 13553MB
+2026-11-04 00:46:06,371 INFO task1_llm_ft.trainer: Update 925/1250 | ex 29600 | sft 0.1845 | lr 3.36e-06 | gnorm 1.56 | mem 13553MB
+2026-11-04 00:46:57,631 INFO task1_llm_ft.trainer: Saved recovery checkpoint at update 937 to ./outputs/task1/full_ft/checkpoint_step_937: {'update': 937, 'examples_seen': 29984, 'weights_file': 'model_state.pt', 'weights_mb': 2273.8707914352417, 'optimizer_mb': 4547.862036705017, 'total_mb': 6821.732828140259, 'save_sec': 7.49806819204241}
+2026-11-04 00:47:45,573 INFO task1_llm_ft.trainer: Update 950/1250 | ex 30400 | sft 0.1915 | lr 2.89e-06 | gnorm 1.80 | mem 13553MB
+2026-11-04 00:49:18,210 INFO task1_llm_ft.trainer: Update 975/1250 | ex 31200 | sft 0.2065 | lr 2.45e-06 | gnorm 1.71 | mem 13553MB
+2026-11-04 00:50:48,885 INFO task1_llm_ft.trainer: Update 1000/1250 | ex 32000 | sft 0.2111 | lr 2.04e-06 | gnorm 1.64 | mem 13553MB
+2026-11-04 00:52:20,460 INFO task1_llm_ft.trainer: Update 1025/1250 | ex 32800 | sft 0.1728 | lr 1.67e-06 | gnorm 1.47 | mem 13553MB
+2026-11-04 00:53:51,947 INFO task1_llm_ft.trainer: Update 1050/1250 | ex 33600 | sft 0.2148 | lr 1.33e-06 | gnorm 1.76 | mem 13553MB
+2026-11-04 00:55:24,573 INFO task1_llm_ft.trainer: Update 1075/1250 | ex 34400 | sft 0.1664 | lr 1.02e-06 | gnorm 1.72 | mem 13553MB
+2026-11-04 00:56:55,763 INFO task1_llm_ft.trainer: Update 1100/1250 | ex 35200 | sft 0.1918 | lr 7.56e-07 | gnorm 1.66 | mem 13553MB
+2026-11-04 00:58:26,933 INFO task1_llm_ft.trainer: Update 1125/1250 | ex 36000 | sft 0.1915 | lr 5.29e-07 | gnorm 1.55 | mem 13553MB
+2026-11-04 00:59:59,202 INFO task1_llm_ft.trainer: Update 1150/1250 | ex 36800 | sft 0.1630 | lr 3.41e-07 | gnorm 1.54 | mem 13553MB
+2026-11-04 01:01:30,608 INFO task1_llm_ft.trainer: Update 1175/1250 | ex 37600 | sft 0.1686 | lr 1.93e-07 | gnorm 1.47 | mem 13553MB
+2026-11-04 01:03:02,037 INFO task1_llm_ft.trainer: Update 1200/1250 | ex 38400 | sft 0.1665 | lr 8.73e-08 | gnorm 1.56 | mem 13553MB
+2026-11-04 01:04:30,216 INFO task1_llm_ft.trainer: Update 1225/1250 | ex 39200 | sft 0.2177 | lr 2.27e-08 | gnorm 1.69 | mem 13553MB
+2026-11-04 01:06:00,677 INFO task1_llm_ft.trainer: Update 1250: ||theta - theta_0||_2 = 10.596425
+2026-11-04 01:06:00,677 INFO task1_llm_ft.trainer: Update 1250/1250 | ex 40000 | sft 0.1646 | lr 3.36e-11 | gnorm 1.57 | mem 13553MB
+2026-11-04 01:06:08,190 INFO task1_llm_ft.trainer: Saved recovery checkpoint at update 1250 to ./outputs/task1/full_ft/checkpoint_step_1250: {'update': 1250, 'examples_seen': 40000, 'weights_file': 'model_state.pt', 'weights_mb': 2273.8707914352417, 'optimizer_mb': 4547.891882896423, 'total_mb': 6821.762674331665, 'save_sec': 7.512604487128556}
+2026-11-04 01:06:08,214 INFO task1_llm_ft.trainer: Saved training history to ./results/task1/full_ft/training_history.json

@@ -1,0 +1,70 @@
+
+>>> Training variant: oplora_16
+2026-11-03 20:51:05,260 INFO task1_llm_ft.trainer: Loading MetaMathQA...
+2026-11-03 20:51:07,999 INFO task1_llm_ft.dataset: Loaded 1319 GSM8K test questions from HuggingFace datasets
+2026-11-03 20:51:46,030 INFO task1_llm_ft.dataset: Filtered MetaMathQA: collected 40000 examples. Filtered empty: 0, contamination: 0, exceeding 2048 tokens: 2.
+2026-11-03 20:51:46,166 INFO task1_llm_ft.trainer: Loading Qwen/Qwen3-0.6B as torch.float16 for variant oplora_16
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-03 20:52:02,821 INFO task1_llm_ft.models: Applied OPLoRA (r=16, alpha=32.0, k=128) to 196 modules. SVD Preprocessing time: 14.93s, Basis storage: 308.00MB
+2026-11-03 20:52:02,845 INFO task1_llm_ft.trainer: Model parameters: {'total': 606142464, 'trainable': 10092544, 'frozen': 596049920}
+2026-11-03 20:52:02,851 INFO task1_llm_ft.trainer: Starting run: method=oplora_16, updates=1250, microbatch=2, accum=16, lr=0.0002, lambda=0.0, start_update=0
+2026-11-03 20:52:11,030 INFO task1_llm_ft.trainer: Update 1/1250 | ex 32 | sft 1.0286 | lr 0.00e+00 | gnorm 3.69 | mem 2834MB
+2026-11-03 20:55:18,858 INFO task1_llm_ft.trainer: Update 25/1250 | ex 800 | sft 0.2816 | lr 1.26e-04 | gnorm 0.42 | mem 4141MB
+2026-11-03 20:58:32,133 INFO task1_llm_ft.trainer: Update 50/1250 | ex 1600 | sft 0.2549 | lr 2.00e-04 | gnorm 0.28 | mem 5236MB
+2026-11-03 21:01:48,342 INFO task1_llm_ft.trainer: Update 75/1250 | ex 2400 | sft 0.2523 | lr 2.00e-04 | gnorm 0.30 | mem 5236MB
+2026-11-03 21:05:03,180 INFO task1_llm_ft.trainer: Update 100/1250 | ex 3200 | sft 0.2588 | lr 1.99e-04 | gnorm 0.28 | mem 5236MB
+2026-11-03 21:08:18,192 INFO task1_llm_ft.trainer: Update 125/1250 | ex 4000 | sft 0.2785 | lr 1.98e-04 | gnorm 0.29 | mem 5236MB
+2026-11-03 21:11:35,060 INFO task1_llm_ft.trainer: Update 150/1250 | ex 4800 | sft 0.2444 | lr 1.96e-04 | gnorm 0.27 | mem 5236MB
+2026-11-03 21:14:52,396 INFO task1_llm_ft.trainer: Update 175/1250 | ex 5600 | sft 0.2163 | lr 1.94e-04 | gnorm 0.26 | mem 5236MB
+2026-11-03 21:18:05,868 INFO task1_llm_ft.trainer: Update 200/1250 | ex 6400 | sft 0.2078 | lr 1.91e-04 | gnorm 0.27 | mem 5236MB
+2026-11-03 21:21:18,867 INFO task1_llm_ft.trainer: Update 225/1250 | ex 7200 | sft 0.2548 | lr 1.89e-04 | gnorm 0.28 | mem 5236MB
+2026-11-03 21:24:31,141 INFO task1_llm_ft.trainer: Update 250/1250 | ex 8000 | sft 0.2505 | lr 1.85e-04 | gnorm 0.31 | mem 5236MB
+2026-11-03 21:27:45,362 INFO task1_llm_ft.trainer: Update 275/1250 | ex 8800 | sft 0.2414 | lr 1.82e-04 | gnorm 0.24 | mem 5236MB
+2026-11-03 21:31:02,086 INFO task1_llm_ft.trainer: Update 300/1250 | ex 9600 | sft 0.2147 | lr 1.78e-04 | gnorm 0.28 | mem 5236MB
+2026-11-03 21:32:36,452 INFO task1_llm_ft.models: Exported projected factors for 196 modules in 53.30ms
+2026-11-03 21:32:36,641 INFO task1_llm_ft.trainer: Saved recovery checkpoint at update 312 to ./outputs/task1/oplora_16/checkpoint_step_312: {'update': 312, 'examples_seen': 9984, 'weights_file': 'adapter_state.pt', 'weights_mb': 38.62060832977295, 'projected_export_sec': 0.11218235082924366, 'projected_factors_mb': 38.627163887023926, 'optimizer_mb': 77.3648042678833, 'total_mb': 154.61257648468018, 'save_sec': 0.3067504093050957}
+2026-11-03 21:34:19,075 INFO task1_llm_ft.trainer: Update 325/1250 | ex 10400 | sft 0.2436 | lr 1.74e-04 | gnorm 0.30 | mem 5236MB
+2026-11-03 21:37:36,177 INFO task1_llm_ft.trainer: Update 350/1250 | ex 11200 | sft 0.2293 | lr 1.69e-04 | gnorm 0.26 | mem 5236MB
+2026-11-03 21:40:52,466 INFO task1_llm_ft.trainer: Update 375/1250 | ex 12000 | sft 0.1928 | lr 1.64e-04 | gnorm 0.25 | mem 5236MB
+2026-11-03 21:44:07,278 INFO task1_llm_ft.trainer: Update 400/1250 | ex 12800 | sft 0.2131 | lr 1.59e-04 | gnorm 0.26 | mem 5236MB
+2026-11-03 21:47:22,251 INFO task1_llm_ft.trainer: Update 425/1250 | ex 13600 | sft 0.2334 | lr 1.54e-04 | gnorm 0.27 | mem 5236MB
+2026-11-03 21:50:38,094 INFO task1_llm_ft.trainer: Update 450/1250 | ex 14400 | sft 0.2323 | lr 1.48e-04 | gnorm 0.27 | mem 5236MB
+2026-11-03 21:53:52,347 INFO task1_llm_ft.trainer: Update 475/1250 | ex 15200 | sft 0.1831 | lr 1.43e-04 | gnorm 0.22 | mem 5236MB
+2026-11-03 21:57:07,180 INFO task1_llm_ft.trainer: Update 500/1250 | ex 16000 | sft 0.2122 | lr 1.37e-04 | gnorm 0.26 | mem 5236MB
+2026-11-03 22:00:22,073 INFO task1_llm_ft.trainer: Update 525/1250 | ex 16800 | sft 0.2037 | lr 1.31e-04 | gnorm 0.24 | mem 5236MB
+2026-11-03 22:03:38,638 INFO task1_llm_ft.trainer: Update 550/1250 | ex 17600 | sft 0.2038 | lr 1.24e-04 | gnorm 0.25 | mem 5236MB
+2026-11-03 22:06:52,562 INFO task1_llm_ft.trainer: Update 575/1250 | ex 18400 | sft 0.2065 | lr 1.18e-04 | gnorm 0.26 | mem 5236MB
+2026-11-03 22:10:08,229 INFO task1_llm_ft.trainer: Update 600/1250 | ex 19200 | sft 0.2023 | lr 1.12e-04 | gnorm 0.25 | mem 5236MB
+2026-11-03 22:13:21,407 INFO task1_llm_ft.trainer: Update 625/1250 | ex 20000 | sft 0.2034 | lr 1.05e-04 | gnorm 0.22 | mem 5236MB
+2026-11-03 22:13:21,498 INFO task1_llm_ft.models: Exported projected factors for 196 modules in 27.29ms
+2026-11-03 22:13:21,688 INFO task1_llm_ft.trainer: Saved recovery checkpoint at update 625 to ./outputs/task1/oplora_16/checkpoint_step_625: {'update': 625, 'examples_seen': 20000, 'weights_file': 'adapter_state.pt', 'weights_mb': 38.62060832977295, 'projected_export_sec': 0.0868227006867528, 'projected_factors_mb': 38.627163887023926, 'optimizer_mb': 77.39465045928955, 'total_mb': 154.64242267608643, 'save_sec': 0.28142341831699014}
+2026-11-03 22:16:33,906 INFO task1_llm_ft.trainer: Update 650/1250 | ex 20800 | sft 0.1804 | lr 9.87e-05 | gnorm 0.25 | mem 5236MB
+2026-11-03 22:19:46,527 INFO task1_llm_ft.trainer: Update 675/1250 | ex 21600 | sft 0.2176 | lr 9.22e-05 | gnorm 0.25 | mem 5236MB
+2026-11-03 22:23:02,576 INFO task1_llm_ft.trainer: Update 700/1250 | ex 22400 | sft 0.2135 | lr 8.58e-05 | gnorm 0.25 | mem 5236MB
+2026-11-03 22:26:18,623 INFO task1_llm_ft.trainer: Update 725/1250 | ex 23200 | sft 0.1960 | lr 7.94e-05 | gnorm 0.24 | mem 5236MB
+2026-11-03 22:29:36,709 INFO task1_llm_ft.trainer: Update 750/1250 | ex 24000 | sft 0.1595 | lr 7.31e-05 | gnorm 0.22 | mem 5236MB
+2026-11-03 22:32:53,074 INFO task1_llm_ft.trainer: Update 775/1250 | ex 24800 | sft 0.1845 | lr 6.69e-05 | gnorm 0.23 | mem 5236MB
+2026-11-03 22:36:11,171 INFO task1_llm_ft.trainer: Update 800/1250 | ex 25600 | sft 0.1830 | lr 6.09e-05 | gnorm 0.24 | mem 5236MB
+2026-11-03 22:39:24,907 INFO task1_llm_ft.trainer: Update 825/1250 | ex 26400 | sft 0.2289 | lr 5.50e-05 | gnorm 0.27 | mem 5236MB
+2026-11-03 22:42:40,220 INFO task1_llm_ft.trainer: Update 850/1250 | ex 27200 | sft 0.2043 | lr 4.93e-05 | gnorm 0.24 | mem 5236MB
+2026-11-03 22:45:55,346 INFO task1_llm_ft.trainer: Update 875/1250 | ex 28000 | sft 0.1930 | lr 4.39e-05 | gnorm 0.25 | mem 5236MB
+2026-11-03 22:49:12,657 INFO task1_llm_ft.trainer: Update 900/1250 | ex 28800 | sft 0.1840 | lr 3.86e-05 | gnorm 0.25 | mem 5236MB
+2026-11-03 22:52:28,982 INFO task1_llm_ft.trainer: Update 925/1250 | ex 29600 | sft 0.1953 | lr 3.36e-05 | gnorm 0.24 | mem 5236MB
+2026-11-03 22:54:03,586 INFO task1_llm_ft.models: Exported projected factors for 196 modules in 27.77ms
+2026-11-03 22:54:03,783 INFO task1_llm_ft.trainer: Saved recovery checkpoint at update 937 to ./outputs/task1/oplora_16/checkpoint_step_937: {'update': 937, 'examples_seen': 29984, 'weights_file': 'adapter_state.pt', 'weights_mb': 38.62060832977295, 'projected_export_sec': 0.08880711905658245, 'projected_factors_mb': 38.627163887023926, 'optimizer_mb': 77.42443561553955, 'total_mb': 154.67220783233643, 'save_sec': 0.30552563397213817}
+2026-11-03 22:55:46,466 INFO task1_llm_ft.trainer: Update 950/1250 | ex 30400 | sft 0.2052 | lr 2.89e-05 | gnorm 0.27 | mem 5236MB
+2026-11-03 22:59:04,147 INFO task1_llm_ft.trainer: Update 975/1250 | ex 31200 | sft 0.2190 | lr 2.45e-05 | gnorm 0.27 | mem 5236MB
+2026-11-03 23:02:20,875 INFO task1_llm_ft.trainer: Update 1000/1250 | ex 32000 | sft 0.2213 | lr 2.04e-05 | gnorm 0.25 | mem 5236MB
+2026-11-03 23:05:33,936 INFO task1_llm_ft.trainer: Update 1025/1250 | ex 32800 | sft 0.1936 | lr 1.67e-05 | gnorm 0.24 | mem 5236MB
+2026-11-03 23:08:46,291 INFO task1_llm_ft.trainer: Update 1050/1250 | ex 33600 | sft 0.2322 | lr 1.33e-05 | gnorm 0.27 | mem 5236MB
+2026-11-03 23:11:59,256 INFO task1_llm_ft.trainer: Update 1075/1250 | ex 34400 | sft 0.1800 | lr 1.02e-05 | gnorm 0.27 | mem 5236MB
+2026-11-03 23:15:16,019 INFO task1_llm_ft.trainer: Update 1100/1250 | ex 35200 | sft 0.2138 | lr 7.56e-06 | gnorm 0.27 | mem 5236MB
+2026-11-03 23:18:30,026 INFO task1_llm_ft.trainer: Update 1125/1250 | ex 36000 | sft 0.2103 | lr 5.29e-06 | gnorm 0.25 | mem 5236MB
+2026-11-03 23:21:42,852 INFO task1_llm_ft.trainer: Update 1150/1250 | ex 36800 | sft 0.1728 | lr 3.41e-06 | gnorm 0.24 | mem 5236MB
+2026-11-03 23:24:54,164 INFO task1_llm_ft.trainer: Update 1175/1250 | ex 37600 | sft 0.1829 | lr 1.93e-06 | gnorm 0.24 | mem 5236MB
+2026-11-03 23:28:05,960 INFO task1_llm_ft.trainer: Update 1200/1250 | ex 38400 | sft 0.1794 | lr 8.73e-07 | gnorm 0.25 | mem 5236MB
+2026-11-03 23:31:22,244 INFO task1_llm_ft.trainer: Update 1225/1250 | ex 39200 | sft 0.2415 | lr 2.27e-07 | gnorm 0.26 | mem 5236MB
+2026-11-03 23:34:39,121 INFO task1_llm_ft.trainer: Update 1250/1250 | ex 40000 | sft 0.1807 | lr 3.36e-10 | gnorm 0.24 | mem 5236MB
+2026-11-03 23:34:39,213 INFO task1_llm_ft.models: Exported projected factors for 196 modules in 27.86ms
+2026-11-03 23:34:39,409 INFO task1_llm_ft.trainer: Saved recovery checkpoint at update 1250 to ./outputs/task1/oplora_16/checkpoint_step_1250: {'update': 1250, 'examples_seen': 40000, 'weights_file': 'adapter_state.pt', 'weights_mb': 38.62060832977295, 'projected_export_sec': 0.08804041473194957, 'projected_factors_mb': 38.627163887023926, 'optimizer_mb': 77.4542818069458, 'total_mb': 154.70205402374268, 'save_sec': 0.28811583714559674}
+2026-11-03 23:34:39,431 INFO task1_llm_ft.trainer: Saved training history to ./results/task1/oplora_16/training_history.json

@@ -1,0 +1,47 @@
+[32mActivated conda/uv virtual environment at [36m/venv/main[0m
+warning: `--folder` is no longer required for folder URLs and will be removed in a future release
+Retrieving folder contents
+Retrieving folder 1Nqtmbk1eriY3B-qAlv7dgPvmc2Uo8ffI qwen25-math
+Processing file 1SaWxZ4mpycw2BWZ5G0dahoYZ6Hh8tPWP generations.parquet
+Processing file 1RCYHrTnUKtF7gHLSTe92x6W9ZsCOekfQ probability_metrics.parquet
+Retrieving folder 1hr1BDTBT2PUqkhy8WRsCFOqNJHMMUYZn qwen25vl-mathvista
+Processing file 1Nzg2VwE2qFzA10BF1lTxEcBZCePBe51q attention_metrics.parquet
+Processing file 1sedMpWLI_UgPvAQVj7tS3HYVH0ARS1yA generations.parquet
+Processing file 1f2XAu_J5NviYHEhtkRrFbKc7b2us1WiW probability_metrics.parquet
+Processing file 1ZuUjXRtePOMKJYhj0BnZ4NuThXpwMLbK .DS_Store
+Processing file 1RARGiUK_jZpOii-b8kyGLoejaldMUAa3 README.MD
+Retrieving folder contents completed
+Building directory structure
+Building directory structure completed
+Downloading...
+From: https://drive.google.com/uc?id=1SaWxZ4mpycw2BWZ5G0dahoYZ6Hh8tPWP
+To: /workspace/pa3/data/ATML-PA3-Data/qwen25-math/generations.parquet
+  0%|          | 0.00/26.9M [00:00<?, ?B/s] 12%|█▏        | 3.15M/26.9M [00:00<00:00, 30.3MB/s] 23%|██▎       | 6.29M/26.9M [00:00<00:01, 14.1MB/s] 31%|███       | 8.39M/26.9M [00:00<00:01, 15.9MB/s] 49%|████▊     | 13.1M/26.9M [00:00<00:00, 14.7MB/s] 56%|█████▋    | 15.2M/26.9M [00:00<00:00, 15.1MB/s] 80%|███████▉  | 21.5M/26.9M [00:01<00:00, 18.8MB/s] 88%|████████▊ | 23.6M/26.9M [00:01<00:00, 18.6MB/s]100%|██████████| 26.9M/26.9M [00:01<00:00, 19.3MB/s]
+Downloading...
+From (original): https://drive.google.com/uc?id=1RCYHrTnUKtF7gHLSTe92x6W9ZsCOekfQ
+From (redirected): https://drive.google.com/uc?id=1RCYHrTnUKtF7gHLSTe92x6W9ZsCOekfQ&confirm=t&uuid=fe8e4ebb-6a2e-4aba-97bf-f7d2251d313c
+To: /workspace/pa3/data/ATML-PA3-Data/qwen25-math/probability_metrics.parquet
+  0%|          | 0.00/155M [00:00<?, ?B/s]  1%|▏         | 2.10M/155M [00:00<00:07, 19.9MB/s]  3%|▎         | 4.72M/155M [00:00<00:21, 7.12MB/s]  8%|▊         | 12.1M/155M [00:00<00:07, 20.3MB/s] 10%|█         | 16.3M/155M [00:01<00:08, 16.3MB/s] 12%|█▏        | 19.4M/155M [00:01<00:08, 15.8MB/s] 15%|█▌        | 23.6M/155M [00:01<00:09, 13.4MB/s] 17%|█▋        | 25.7M/155M [00:01<00:09, 13.0MB/s] 22%|██▏       | 33.6M/155M [00:01<00:05, 22.8MB/s] 24%|██▍       | 37.2M/155M [00:02<00:08, 14.7MB/s] 29%|██▊       | 44.6M/155M [00:02<00:07, 14.7MB/s] 30%|███       | 47.2M/155M [00:03<00:07, 15.0MB/s] 35%|███▌      | 55.1M/155M [00:03<00:06, 16.3MB/s] 37%|███▋      | 57.1M/155M [00:03<00:06, 15.5MB/s] 42%|████▏     | 65.5M/155M [00:03<00:03, 24.3MB/s] 45%|████▍     | 69.2M/155M [00:04<00:04, 18.8MB/s] 47%|████▋     | 72.4M/155M [00:04<00:04, 16.7MB/s] 52%|█████▏    | 80.2M/155M [00:04<00:03, 19.4MB/s] 54%|█████▍    | 84.4M/155M [00:05<00:03, 18.6MB/s] 57%|█████▋    | 88.1M/155M [00:05<00:03, 20.9MB/s] 61%|██████    | 94.9M/155M [00:05<00:02, 27.8MB/s] 64%|██████▎   | 98.6M/155M [00:05<00:01, 29.3MB/s] 66%|██████▌   | 102M/155M [00:05<00:02, 20.4MB/s]  70%|██████▉   | 109M/155M [00:05<00:01, 27.3MB/s] 73%|███████▎  | 113M/155M [00:05<00:01, 25.1MB/s] 75%|███████▍  | 116M/155M [00:06<00:01, 19.9MB/s] 79%|███████▉  | 123M/155M [00:06<00:01, 26.8MB/s] 82%|████████▏ | 127M/155M [00:06<00:01, 25.0MB/s] 84%|████████▍ | 131M/155M [00:06<00:00, 25.7MB/s] 86%|████████▌ | 134M/155M [00:06<00:00, 24.3MB/s] 88%|████████▊ | 137M/155M [00:06<00:00, 25.5MB/s] 92%|█████████▏| 143M/155M [00:07<00:00, 28.6MB/s] 94%|█████████▍| 146M/155M [00:07<00:00, 26.1MB/s] 96%|█████████▋| 149M/155M [00:07<00:00, 24.4MB/s] 99%|█████████▉| 154M/155M [00:07<00:00, 26.6MB/s]100%|██████████| 155M/155M [00:07<00:00, 20.4MB/s]
+Downloading...
+From (original): https://drive.google.com/uc?id=1Nzg2VwE2qFzA10BF1lTxEcBZCePBe51q
+From (redirected): https://drive.google.com/uc?id=1Nzg2VwE2qFzA10BF1lTxEcBZCePBe51q&confirm=t&uuid=4779f4c9-62c1-4535-9ba4-c52a1e992587
+To: /workspace/pa3/data/ATML-PA3-Data/qwen25vl-mathvista/attention_metrics.parquet
+  0%|          | 0.00/138M [00:00<?, ?B/s]  2%|▏         | 2.62M/138M [00:00<00:05, 24.9MB/s]  4%|▍         | 5.24M/138M [00:00<00:14, 9.00MB/s]  9%|▉         | 13.1M/138M [00:00<00:07, 16.1MB/s] 14%|█▍        | 19.4M/138M [00:00<00:04, 23.8MB/s] 17%|█▋        | 23.1M/138M [00:01<00:05, 20.3MB/s] 19%|█▉        | 26.2M/138M [00:01<00:05, 21.4MB/s] 23%|██▎       | 32.0M/138M [00:01<00:04, 24.1MB/s] 25%|██▌       | 35.1M/138M [00:01<00:04, 25.4MB/s] 28%|██▊       | 38.3M/138M [00:02<00:07, 12.9MB/s] 34%|███▎      | 46.7M/138M [00:02<00:05, 17.0MB/s] 36%|███▌      | 49.3M/138M [00:02<00:05, 17.6MB/s] 41%|████▏     | 57.1M/138M [00:02<00:03, 23.4MB/s] 44%|████▎     | 60.3M/138M [00:03<00:03, 23.5MB/s] 49%|████▉     | 68.2M/138M [00:03<00:02, 33.0MB/s] 52%|█████▏    | 72.4M/138M [00:03<00:02, 26.8MB/s] 58%|█████▊    | 80.7M/138M [00:03<00:01, 36.8MB/s] 62%|██████▏   | 86.0M/138M [00:03<00:01, 29.2MB/s] 65%|██████▌   | 90.2M/138M [00:03<00:01, 26.7MB/s] 71%|███████   | 98.0M/138M [00:04<00:01, 35.8MB/s] 74%|███████▍  | 103M/138M [00:04<00:01, 33.2MB/s]  77%|███████▋  | 107M/138M [00:04<00:00, 33.6MB/s] 83%|████████▎ | 115M/138M [00:04<00:00, 42.8MB/s] 87%|████████▋ | 120M/138M [00:04<00:00, 33.3MB/s] 93%|█████████▎| 128M/138M [00:04<00:00, 40.4MB/s] 97%|█████████▋| 135M/138M [00:05<00:00, 34.8MB/s]100%|██████████| 138M/138M [00:05<00:00, 26.9MB/s]
+Downloading...
+From: https://drive.google.com/uc?id=1sedMpWLI_UgPvAQVj7tS3HYVH0ARS1yA
+To: /workspace/pa3/data/ATML-PA3-Data/qwen25vl-mathvista/generations.parquet
+  0%|          | 0.00/17.1M [00:00<?, ?B/s] 12%|█▏        | 2.10M/17.1M [00:00<00:00, 20.9MB/s] 31%|███       | 5.24M/17.1M [00:00<00:00, 24.3MB/s] 64%|██████▍   | 11.0M/17.1M [00:00<00:00, 28.8MB/s]100%|██████████| 17.1M/17.1M [00:00<00:00, 34.8MB/s]
+Downloading...
+From: https://drive.google.com/uc?id=1f2XAu_J5NviYHEhtkRrFbKc7b2us1WiW
+To: /workspace/pa3/data/ATML-PA3-Data/qwen25vl-mathvista/probability_metrics.parquet
+  0%|          | 0.00/81.1M [00:00<?, ?B/s]  3%|▎         | 2.62M/81.1M [00:00<00:03, 25.2MB/s]  6%|▋         | 5.24M/81.1M [00:00<00:10, 6.95MB/s] 16%|█▌        | 13.1M/81.1M [00:01<00:05, 11.7MB/s] 26%|██▋       | 21.5M/81.1M [00:01<00:04, 12.1MB/s] 37%|███▋      | 29.9M/81.1M [00:02<00:03, 14.2MB/s] 45%|████▍     | 36.2M/81.1M [00:02<00:02, 18.7MB/s] 50%|████▉     | 40.4M/81.1M [00:02<00:02, 16.5MB/s] 57%|█████▋    | 46.1M/81.1M [00:02<00:01, 21.2MB/s] 63%|██████▎   | 50.9M/81.1M [00:03<00:01, 18.0MB/s] 68%|██████▊   | 55.1M/81.1M [00:03<00:01, 20.8MB/s] 76%|███████▌  | 61.3M/81.1M [00:03<00:01, 18.9MB/s] 83%|████████▎ | 67.6M/81.1M [00:03<00:00, 24.2MB/s] 88%|████████▊ | 71.3M/81.1M [00:04<00:00, 22.9MB/s] 92%|█████████▏| 74.4M/81.1M [00:04<00:00, 21.8MB/s] 97%|█████████▋| 78.6M/81.1M [00:04<00:00, 25.1MB/s]100%|██████████| 81.1M/81.1M [00:04<00:00, 18.8MB/s]
+Downloading...
+From: https://drive.google.com/uc?id=1ZuUjXRtePOMKJYhj0BnZ4NuThXpwMLbK
+To: /workspace/pa3/data/ATML-PA3-Data/.DS_Store
+  0%|          | 0.00/6.15k [00:00<?, ?B/s]100%|██████████| 6.15k/6.15k [00:00<00:00, 3.17MB/s]
+Downloading...
+From: https://drive.google.com/uc?id=1RARGiUK_jZpOii-b8kyGLoejaldMUAa3
+To: /workspace/pa3/data/ATML-PA3-Data/README.MD
+  0%|          | 0.00/4.41k [00:00<?, ?B/s]100%|██████████| 4.41k/4.41k [00:00<00:00, 18.2MB/s]
+Download completed
+GDOWN_EXIT=0

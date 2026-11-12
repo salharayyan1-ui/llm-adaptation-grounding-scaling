@@ -1,0 +1,30 @@
+torch 2.11.0+cu128 | device cuda (NVIDIA GeForce RTX 3090)
+[PASS] t1 labels end at <|im_end|> (no trailing newline target)  (16 supervised tokens)
+`torch_dtype` is deprecated! Use `dtype` instead!
+[PASS] t1 Full FT trains (FP32 masters + GradScaler unscale)  (trainable=9,780,928 skipped=0)
+[PASS] t1 Full FT + L2-SP trains and logs Omega / lambda*Omega / total  (Omega=0.0050 displacement=0.1131)
+[PASS] t1 lora_4 trains  (trainable=8,192 base dtypes={torch.float16})
+[PASS] t1 lora_16 trains  (trainable=32,768 base dtypes={torch.float16})
+[PASS] t1 oplora_16 trains  (trainable=32,768 base dtypes={torch.float16})
+[PASS] t1 L2-SP gradient term == autograd of lambda*Omega  (Omega=488.7427)
+[PASS] t1 selective-head loss == full-logits loss  (loss=11.86862)
+[PASS] t1 load condition 'baseline' (fresh FP16 backbone, merged, unwrapped)  (ok)
+[PASS] t1 load condition 'full_ft_midpoint' (fresh FP16 backbone, merged, unwrapped)  (ok)
+[PASS] t1 load condition 'full_ft_final' (fresh FP16 backbone, merged, unwrapped)  (ok)
+[PASS] t1 load condition 'full_ft_l2_sp_final' (fresh FP16 backbone, merged, unwrapped)  (ok)
+[PASS] t1 load condition 'lora_4_final' (fresh FP16 backbone, merged, unwrapped)  (top1=1.000 maxdiff=0.000854)
+[PASS] t1 load condition 'lora_16_final' (fresh FP16 backbone, merged, unwrapped)  (top1=1.000 maxdiff=0.000854)
+[PASS] t1 load condition 'oplora_16_final' (fresh FP16 backbone, merged, unwrapped)  (top1=1.000 maxdiff=0.000977)
+[PASS] t1 diagnostics delta loader; OPLoRA rho_k == 0 (output and input side)  (full_ft_final: rho_k=1.19e-01; lora_16_final: rho_k=1.12e-01; oplora_16_final: rho_k=6.95e-08)
+[PASS] t1 resume from checkpoint_step_2 completes  (max |resumed - uninterrupted| adapter diff = 0.00e+00 (small = deterministic resume))
+[PASS] t2 prompt/token ids (placeholder id, think block, caps)  (id=151655, 196 placeholders, empty <think> block, caps ok)
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/workspace/pa3/scripts/smoke_test_gpu.py:279: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  return f"loss={float(loss):.3f}"
+[PASS] t2 splice: connector gradients, frozen LLM, logits depend on image  (loss=11.922)
+[PASS] t2 enable_lora + save/load adapters round trip  (16 LoRA tensors; dtype=torch.float32)
+[PASS] t2 batched left-padded generation (image / different length / no image)  (batched[0]==alone: True)
+[PASS] t2 3-stage curriculum, checkpoints, dev eval, full evaluation  (trainable by stage={1: 53376, 2: 67712, 3: 67712})
+
+22/22 checks passed

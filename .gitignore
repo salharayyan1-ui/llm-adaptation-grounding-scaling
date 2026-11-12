@@ -32,3 +32,6 @@ tmp_results_*/
 .DS_Store
 Thumbs.db
 
+
+# real run logs from the GPU instance are kept as provenance
+!logs_remote/*.log

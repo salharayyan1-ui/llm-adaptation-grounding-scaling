@@ -1,0 +1,113 @@
+[32mActivated conda/uv virtual environment at [36m/venv/main[0m
+=== cache_features start Tue Nov  3 16:27:13 UTC 2026
+2026-11-03 16:27:18,788 INFO task2_vlm.caching: Caching SigLIP features for 9244 images into ./data/cached_features_smoke
+2026-11-03 16:27:18,904 INFO task2_vlm.caching: Loading SigLIP vision model: google/siglip-base-patch16-224 on cuda
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-03 16:27:37,639 INFO task2_vlm.caching: Offloading SigLIP vision model from GPU memory...
+2026-11-03 16:27:37,840 INFO task2_vlm.caching: SigLIP offloaded successfully.
+2026-11-03 16:27:37,919 INFO task2_vlm.caching: Feature caching done: {'requested': 9244, 'newly_cached': 9244, 'already_cached': 0, 'seconds': 17.482692292891443, 'images_per_sec': 528.7515129325167, 'peak_gpu_mem_mb': 425.16455078125, 'cache_disk_mb': 2655.16748046875}
+=== cache_features done Tue Nov  3 16:27:39 UTC 2026
+=== train start Tue Nov  3 16:27:39 UTC 2026
+2026-11-03 16:27:43,907 WARNING task2_vlm.trainer: Using NON-DEFAULT stage budgets {1: 12, 2: 8, 3: 6} (spec: {1: 2250, 2: 1500, 3: 750}); results are not the final recipe
+2026-11-03 16:27:46,758 INFO task2_vlm.models: Loading LLM Qwen/Qwen3-0.6B...
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-03 16:27:50,498 INFO task2_vlm.models: Connector calibrated: text_norm=0.9135, vis_norm=15.8834, scale=0.0575
+2026-11-03 16:27:50,499 INFO task2_vlm.trainer: Connector calibration scale = 0.0575
+2026-11-03 16:27:50,513 INFO task2_vlm.trainer: Starting curriculum training (26 updates)
+2026-11-03 16:27:50,513 INFO task2_vlm.trainer: Dev evaluation at update 0 (stage 1)
+2026-11-03 16:27:57,896 INFO task2_vlm.trainer: [grounding] {'nll_correct': 12.602186153332392, 'nll_swap': 12.686658829450607, 'nll_no_image': 10.95543118317922, 'delta_nll': 0.08447267611821552}
+2026-11-03 16:28:04,813 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 12.916166190057993, 'nll_swap': 13.063655849546194, 'nll_no_image': 12.23925969004631, 'delta_nll': 0.14748965948820114}
+2026-11-03 16:28:04,813 INFO task2_vlm.trainer: Stage 1: 1 param groups, peak LRs [0.001], trainable params 1,837,056
+2026-11-03 16:28:04,813 INFO task2_vlm.trainer: === Stage 1: 12 updates (starting at step 0) ===
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+2026-11-03 16:28:16,510 INFO task2_vlm.trainer: --- Completed stage 1 at update 12 ---
+2026-11-03 16:28:16,518 INFO task2_vlm.models: Saved connector weights to outputs/task2_smoke/connector_stage_1.pt
+2026-11-03 16:28:16,518 INFO task2_vlm.trainer: Dev evaluation at update 12 (stage 1)
+2026-11-03 16:28:23,026 INFO task2_vlm.trainer: [grounding] {'nll_correct': 8.420032997926077, 'nll_swap': 8.473581175009409, 'nll_no_image': 10.95543118317922, 'delta_nll': 0.05354817708333215}
+2026-11-03 16:28:29,170 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 10.243180856108665, 'nll_swap': 10.237414203584194, 'nll_no_image': 12.23925969004631, 'delta_nll': -0.005766652524471283}
+2026-11-03 16:28:29,386 INFO task2_vlm.models: LoRA enabled: 6,424,576 trainable / 602,474,496 total parameters.
+2026-11-03 16:28:29,389 INFO task2_vlm.trainer: Stage 2: 2 param groups, peak LRs [0.0001, 2e-05], trainable params 6,424,576
+2026-11-03 16:28:29,389 INFO task2_vlm.trainer: === Stage 2: 8 updates (starting at step 0) ===
+2026-11-03 16:28:36,555 INFO task2_vlm.trainer: --- Completed stage 2 at update 20 ---
+2026-11-03 16:28:36,563 INFO task2_vlm.models: Saved connector weights to outputs/task2_smoke/connector_stage_2.pt
+2026-11-03 16:28:36,597 INFO task2_vlm.models: Saved LoRA adapters to outputs/task2_smoke/lora_adapters_stage_2.pt
+2026-11-03 16:28:36,597 INFO task2_vlm.trainer: Dev evaluation at update 20 (stage 2)
+2026-11-03 16:28:45,184 INFO task2_vlm.trainer: [grounding] {'nll_correct': 2.682785210510095, 'nll_swap': 2.780115927259127, 'nll_no_image': 9.833452771107355, 'delta_nll': 0.09733071674903204}
+2026-11-03 16:28:54,074 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 5.053148880600929, 'nll_swap': 4.891639805398881, 'nll_no_image': 11.458358272910118, 'delta_nll': -0.16150907520204782}
+2026-11-03 16:28:54,074 INFO task2_vlm.models: LoRA already enabled.
+2026-11-03 16:28:54,077 INFO task2_vlm.trainer: Stage 3: 2 param groups, peak LRs [5e-05, 1e-05], trainable params 6,424,576
+2026-11-03 16:28:54,077 INFO task2_vlm.trainer: === Stage 3: 6 updates (starting at step 0) ===
+2026-11-03 16:28:59,200 INFO task2_vlm.trainer: --- Completed stage 3 at update 26 ---
+2026-11-03 16:28:59,208 INFO task2_vlm.models: Saved connector weights to outputs/task2_smoke/connector_stage_3.pt
+2026-11-03 16:28:59,241 INFO task2_vlm.models: Saved LoRA adapters to outputs/task2_smoke/lora_adapters_stage_3.pt
+2026-11-03 16:28:59,242 INFO task2_vlm.trainer: Dev evaluation at update 26 (stage 3)
+2026-11-03 16:29:07,614 INFO task2_vlm.trainer: [grounding] {'nll_correct': 2.1984715461730957, 'nll_swap': 2.3625340474148593, 'nll_no_image': 9.539154092470804, 'delta_nll': 0.16406250124176358}
+2026-11-03 16:29:16,465 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 3.674357434734702, 'nll_swap': 3.589604989858344, 'nll_no_image': 11.214807823300362, 'delta_nll': -0.08475244487635791}
+=== train done Tue Nov  3 16:29:17 UTC 2026
+=== evaluate start Tue Nov  3 16:29:17 UTC 2026
+2026-11-03 16:29:23,041 INFO task2_vlm.models: Loading LLM Qwen/Qwen3-0.6B...
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-03 16:29:25,466 INFO task2_vlm.models: Loaded connector weights from ./outputs/task2_smoke/connector_stage_3.pt
+2026-11-03 16:29:25,631 INFO task2_vlm.models: LoRA enabled: 6,424,576 trainable / 602,474,496 total parameters.
+2026-11-03 16:29:25,684 INFO task2_vlm.models: Loaded LoRA adapters from ./outputs/task2_smoke/lora_adapters_stage_3.pt (224 tensors)
+2026-11-03 16:29:25,755 INFO task2_vlm.evaluate: Evaluating grounding_suite under condition: correct
+2026-11-03 16:29:36,749 INFO task2_vlm.evaluate: Evaluating grounding_suite under condition: swap
+2026-11-03 16:29:47,513 INFO task2_vlm.evaluate: Evaluating grounding_suite under condition: mismatched
+2026-11-03 16:29:57,952 INFO task2_vlm.evaluate: Evaluating grounding_suite under condition: no_image
+2026-11-03 16:30:15,964 INFO task2_vlm.evaluate: Evaluating vqav2_suite under condition: correct
+2026-11-03 16:30:39,184 INFO task2_vlm.evaluate: Evaluating vqav2_suite under condition: swap
+2026-11-03 16:31:02,889 INFO task2_vlm.evaluate: Evaluating vqav2_suite under condition: mismatched
+2026-11-03 16:31:25,185 INFO task2_vlm.evaluate: Evaluating vqav2_suite under condition: no_image
+2026-11-03 16:31:54,791 INFO task2_vlm.evaluate: Evaluation complete; report in results/task2_smoke/final_evaluation_report.json
+=== evaluate done Tue Nov  3 16:31:55 UTC 2026
+=== compress start Tue Nov  3 16:31:55 UTC 2026
+2026-11-03 16:32:00,719 WARNING task2_vlm.trainer: Using NON-DEFAULT stage budgets {1: 12, 2: 8, 3: 6} (spec: {1: 2250, 2: 1500, 3: 750}); results are not the final recipe
+2026-11-03 16:32:03,718 INFO task2_vlm.models: Loading LLM Qwen/Qwen3-0.6B...
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-11-03 16:32:06,617 INFO task2_vlm.models: Connector calibrated: text_norm=0.9135, vis_norm=11.4536, scale=0.0798
+2026-11-03 16:32:06,618 INFO task2_vlm.trainer: Connector calibration scale = 0.0798
+2026-11-03 16:32:06,622 INFO task2_vlm.trainer: Starting curriculum training (26 updates)
+2026-11-03 16:32:06,622 INFO task2_vlm.trainer: Dev evaluation at update 0 (stage 1)
+2026-11-03 16:32:12,915 INFO task2_vlm.trainer: [grounding] {'nll_correct': 10.28572185834249, 'nll_swap': 10.316320786873499, 'nll_no_image': 10.95543118317922, 'delta_nll': 0.03059892853100976}
+2026-11-03 16:32:20,034 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 12.076510950922966, 'nll_swap': 11.974984377622604, 'nll_no_image': 12.23925969004631, 'delta_nll': -0.10152657330036163}
+2026-11-03 16:32:20,034 INFO task2_vlm.trainer: Stage 1: 1 param groups, peak LRs [0.001], trainable params 1,837,056
+2026-11-03 16:32:20,034 INFO task2_vlm.trainer: === Stage 1: 12 updates (starting at step 0) ===
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+2026-11-03 16:32:24,977 INFO task2_vlm.trainer: --- Completed stage 1 at update 12 ---
+2026-11-03 16:32:24,986 INFO task2_vlm.models: Saved connector weights to outputs/task2_smoke_49tok/connector_stage_1.pt
+2026-11-03 16:32:24,986 INFO task2_vlm.trainer: Dev evaluation at update 12 (stage 1)
+2026-11-03 16:32:31,112 INFO task2_vlm.trainer: [grounding] {'nll_correct': 10.535918007294336, 'nll_swap': 10.50881838798523, 'nll_no_image': 10.95543118317922, 'delta_nll': -0.02709961930910687}
+2026-11-03 16:32:38,275 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 12.437837950885296, 'nll_swap': 12.56948570907116, 'nll_no_image': 12.23925969004631, 'delta_nll': 0.1316477581858635}
+2026-11-03 16:32:38,512 INFO task2_vlm.models: LoRA enabled: 6,424,576 trainable / 602,474,496 total parameters.
+2026-11-03 16:32:38,515 INFO task2_vlm.trainer: Stage 2: 2 param groups, peak LRs [0.0001, 2e-05], trainable params 6,424,576
+2026-11-03 16:32:38,515 INFO task2_vlm.trainer: === Stage 2: 8 updates (starting at step 0) ===
+2026-11-03 16:32:43,256 INFO task2_vlm.trainer: --- Completed stage 2 at update 20 ---
+2026-11-03 16:32:43,264 INFO task2_vlm.models: Saved connector weights to outputs/task2_smoke_49tok/connector_stage_2.pt
+2026-11-03 16:32:43,297 INFO task2_vlm.models: Saved LoRA adapters to outputs/task2_smoke_49tok/lora_adapters_stage_2.pt
+2026-11-03 16:32:43,297 INFO task2_vlm.trainer: Dev evaluation at update 20 (stage 2)
+2026-11-03 16:32:51,276 INFO task2_vlm.trainer: [grounding] {'nll_correct': 9.70791087547938, 'nll_swap': 9.531641334295273, 'nll_no_image': 10.307231595118841, 'delta_nll': -0.17626954118410687}
+2026-11-03 16:33:00,494 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 11.75434847921133, 'nll_swap': 11.830225966870785, 'nll_no_image': 11.786096155643463, 'delta_nll': 0.07587748765945435}
+2026-11-03 16:33:00,494 INFO task2_vlm.models: LoRA already enabled.
+2026-11-03 16:33:00,497 INFO task2_vlm.trainer: Stage 3: 2 param groups, peak LRs [5e-05, 1e-05], trainable params 6,424,576
+2026-11-03 16:33:00,498 INFO task2_vlm.trainer: === Stage 3: 6 updates (starting at step 0) ===
+2026-11-03 16:33:04,286 INFO task2_vlm.trainer: --- Completed stage 3 at update 26 ---
+2026-11-03 16:33:04,294 INFO task2_vlm.models: Saved connector weights to outputs/task2_smoke_49tok/connector_stage_3.pt
+2026-11-03 16:33:04,327 INFO task2_vlm.models: Saved LoRA adapters to outputs/task2_smoke_49tok/lora_adapters_stage_3.pt
+2026-11-03 16:33:04,327 INFO task2_vlm.trainer: Dev evaluation at update 26 (stage 3)
+2026-11-03 16:33:12,254 INFO task2_vlm.trainer: [grounding] {'nll_correct': 9.119627555211386, 'nll_swap': 8.903034120798111, 'nll_no_image': 9.639051973819733, 'delta_nll': -0.21659343441327472}
+2026-11-03 16:33:21,490 INFO task2_vlm.trainer: [vqav2] {'nll_correct': 11.034880734980106, 'nll_swap': 11.110908586531878, 'nll_no_image': 11.240240976214409, 'delta_nll': 0.07602785155177116}
+2026-11-03 16:33:21,827 INFO task2_vlm.models: Loading LLM Qwen/Qwen3-0.6B...
+2026-11-03 16:33:23,898 INFO task2_vlm.models: Loaded connector weights from ./outputs/task2_smoke_49tok/connector_stage_3.pt
+2026-11-03 16:33:24,082 INFO task2_vlm.models: LoRA enabled: 6,424,576 trainable / 602,474,496 total parameters.
+2026-11-03 16:33:24,169 INFO task2_vlm.models: Loaded LoRA adapters from ./outputs/task2_smoke_49tok/lora_adapters_stage_3.pt (224 tensors)
+2026-11-03 16:33:24,244 INFO task2_vlm.evaluate: Evaluating grounding_suite under condition: correct
+2026-11-03 16:33:43,295 INFO task2_vlm.evaluate: Evaluating grounding_suite under condition: swap
+2026-11-03 16:34:02,710 INFO task2_vlm.evaluate: Evaluating grounding_suite under condition: mismatched
+2026-11-03 16:34:21,784 INFO task2_vlm.evaluate: Evaluating grounding_suite under condition: no_image
+2026-11-03 16:34:40,840 INFO task2_vlm.evaluate: Evaluating vqav2_suite under condition: correct
+2026-11-03 16:35:09,492 INFO task2_vlm.evaluate: Evaluating vqav2_suite under condition: swap
+2026-11-03 16:35:38,062 INFO task2_vlm.evaluate: Evaluating vqav2_suite under condition: mismatched
+2026-11-03 16:36:06,873 INFO task2_vlm.evaluate: Evaluating vqav2_suite under condition: no_image
+2026-11-03 16:36:36,331 INFO task2_vlm.evaluate: Evaluation complete; report in results/task2_smoke_49tok/final_evaluation_report.json
+=== compress done Tue Nov  3 16:36:37 UTC 2026
+ALL_DONE

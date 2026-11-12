@@ -1,0 +1,4 @@
+[32mActivated conda/uv virtual environment at [36m/venv/main[0m
+[2026-11-03 16:35:24] PREFLIGHT: queue paused; running 6-update Full FT + L2-SP at real scale
+PREFLIGHT OK: full_ft_l2_sp peak GPU 13.9 GB, 3.9 s/update -> ~1.4 h for 1250 updates; checkpoint 6.7 GB (weights 2.2 + optimizer 4.4), save 7 s
+[2026-11-03 16:36:26] PREFLIGHT finished; restarting queue (free disk 67G)

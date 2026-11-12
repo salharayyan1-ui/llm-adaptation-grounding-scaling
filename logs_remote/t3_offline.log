@@ -1,0 +1,170 @@
+[32mActivated conda/uv virtual environment at [36m/venv/main[0m
+=== opportunity start 04:22:17
+============================================================
+ATML PA3 Task 3: Test-Time Compute Pipeline
+Step: opportunity | Datasets: ['math', 'mathvista'] | Seed: 6304 | Scorer: math-verify==0.9.0+safe-numeric-fallback
+============================================================
+
+[Processing dataset: math]
+Loading rollout data from ./data/ATML-PA3-Data (math)...
+Loaded 1000 questions.
+Splits: 200 dev, 800 held-out evaluation questions.
+
+--- Step 1: Opportunity from repeated sampling ---
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+
+[Processing dataset: mathvista]
+Loading rollout data from ./data/ATML-PA3-Data (mathvista)...
+Loaded 1000 questions.
+Splits: 200 dev, 800 held-out evaluation questions.
+
+--- Step 1: Opportunity from repeated sampling ---
+
+Task 3 pipeline completed.
+=== opportunity done 07:55:35
+=== scoring start 07:55:35
+============================================================
+ATML PA3 Task 3: Test-Time Compute Pipeline
+Step: scoring | Datasets: ['math', 'mathvista'] | Seed: 6304 | Scorer: math-verify==0.9.0+safe-numeric-fallback
+============================================================
+
+[Processing dataset: math]
+Loading rollout data from ./data/ATML-PA3-Data (math)...
+Loaded 1000 questions.
+Splits: 200 dev, 800 held-out evaluation questions.
+
+--- Step 2: Scoring and consensus aggregations ---
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
+Timeout during comparison
